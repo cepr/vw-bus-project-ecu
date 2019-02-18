@@ -1,0 +1,601 @@
+EESchema Schematic File Version 4
+LIBS:speeduino_mini-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 18
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 4750 1150 1750 5100
+U 5C610827
+F0 "MCU" 50
+F1 "mcu.sch" 50
+F2 "A3" I L 4750 2200 50 
+F3 "A2" I L 4750 2700 50 
+F4 "A0" I L 4750 3250 50 
+F5 "A1" I L 4750 3800 50 
+F6 "A4" I L 4750 4300 50 
+F7 "TXD0" O R 6500 4100 50 
+F8 "RXD0" I R 6500 4200 50 
+F9 "A5" I L 4750 5350 50 
+F10 "A6" I L 4750 6100 50 
+F11 "A7" I L 4750 1650 50 
+F12 "INT1" I L 4750 4800 50 
+F13 "INT0" I R 6500 5350 50 
+F14 "RXD1" I R 6500 4850 50 
+F15 "TXD1" O R 6500 4750 50 
+F16 "OC0A_0C1C" O R 6500 5450 50 
+F17 "OC1B" O R 6500 3550 50 
+F18 "OC1A" O R 6500 3450 50 
+F19 "OC2A" O R 6500 5550 50 
+F20 "OC3C" O R 6500 1250 50 
+F21 "OC3B" O R 6500 2700 50 
+F22 "OC3A" O R 6500 2250 50 
+F23 "OC0B" O R 6500 3050 50 
+F24 "PA0" O L 4750 1250 50 
+$EndSheet
+$Sheet
+S 2950 1550 1550 200 
+U 5C64D270
+F0 "O2 Sensor" 50
+F1 "analog_sensor.sch" 50
+F2 "IN" I L 2950 1650 50 
+F3 "OUT" O R 4500 1650 50 
+$EndSheet
+$Sheet
+S 2950 2100 1550 200 
+U 5C653342
+F0 "MAP Sensor" 50
+F1 "map_sensor.sch" 50
+F2 "OUT" O R 4500 2200 50 
+$EndSheet
+Wire Wire Line
+	4500 2200 4750 2200
+$Sheet
+S 2950 2600 1550 200 
+U 5C6588EC
+F0 "Throttle Position Sensor " 50
+F1 "analog_sensor.sch" 50
+F2 "IN" I L 2950 2700 50 
+F3 "OUT" O R 4500 2700 50 
+$EndSheet
+Wire Wire Line
+	4500 2700 4750 2700
+$Sheet
+S 2950 3150 1550 200 
+U 5C65B4AD
+F0 "Intake Air Temperature Sensor" 50
+F1 "temperature_sensor.sch" 50
+F2 "IN" I L 2950 3250 50 
+F3 "OUT" O R 4500 3250 50 
+$EndSheet
+Wire Wire Line
+	4500 3250 4750 3250
+$Sheet
+S 2950 3700 1550 200 
+U 5C65E0B2
+F0 "Head Temperature Sensor" 50
+F1 "temperature_sensor.sch" 50
+F2 "IN" I L 2950 3800 50 
+F3 "OUT" O R 4500 3800 50 
+$EndSheet
+Wire Wire Line
+	4500 3800 4750 3800
+$Sheet
+S 2950 4200 1550 200 
+U 5C661325
+F0 "Battery Reference Voltage" 50
+F1 "vbat.sch" 50
+F2 "OUT" O R 4500 4300 50 
+$EndSheet
+Wire Wire Line
+	4500 4300 4750 4300
+$Sheet
+S 2950 4700 1550 300 
+U 5C6645CA
+F0 "Crank sensor" 50
+F1 "tach_sensor.sch" 50
+F2 "HALL_SENSOR+" O L 2950 4800 50 
+F3 "HALL_SENSOR-" I L 2950 4900 50 
+F4 "CRANK_Output" O R 4500 4800 50 
+$EndSheet
+Wire Wire Line
+	4500 4800 4750 4800
+$Sheet
+S 6800 2150 1050 200 
+U 5C667F1A
+F0 "Injector 1 and 3" 50
+F1 "injector.sch" 50
+F2 "INJ_CMD" I L 6800 2250 50 
+F3 "INJ_OUT" O R 7850 2250 50 
+$EndSheet
+$Sheet
+S 6800 2600 1050 200 
+U 5C668FC1
+F0 "Injector 2 and 4" 50
+F1 "injector.sch" 50
+F2 "INJ_CMD" I L 6800 2700 50 
+F3 "INJ_OUT" O R 7850 2700 50 
+$EndSheet
+Wire Wire Line
+	6500 2700 6800 2700
+Wire Wire Line
+	6500 2250 6800 2250
+$Sheet
+S 6800 3350 1050 300 
+U 5C66F28B
+F0 "Ignitor" 50
+F1 "ignitor.sch" 50
+F2 "IGN1_IN" I L 6800 3450 50 
+F3 "IGN2_IN" I L 6800 3550 50 
+F4 "IGN1_OUT" I R 7850 3450 50 
+F5 "IGN2_OUT" I R 7850 3550 50 
+$EndSheet
+Wire Wire Line
+	6800 3450 6500 3450
+Wire Wire Line
+	6800 3550 6500 3550
+$Sheet
+S 6800 4000 1050 300 
+U 5C6B9F28
+F0 "Raspberry Pi Zero W" 50
+F1 "rasp_zero_interface.sch" 50
+$EndSheet
+Wire Wire Line
+	6500 4100 6800 4100
+Wire Wire Line
+	6500 4200 6800 4200
+$Sheet
+S 6800 1150 1050 200 
+U 5C679A94
+F0 "Injector Power Supply" 50
+F1 "injector_power_supply.sch" 50
+F3 "VOUT" O R 7850 1250 50 
+F4 "EN" I L 6800 1250 50 
+$EndSheet
+Wire Wire Line
+	6800 1250 6500 1250
+$Comp
+L power:GND #PWR039
+U 1 1 5C6C1940
+P 2250 1700
+F 0 "#PWR039" H 2250 1450 50  0001 C CNN
+F 1 "GND" H 2255 1527 50  0000 C CNN
+F 2 "" H 2250 1700 50  0001 C CNN
+F 3 "" H 2250 1700 50  0001 C CNN
+	1    2250 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1650 2250 1650
+Wire Wire Line
+	2250 1650 2250 1700
+$Comp
+L Connector:Screw_Terminal_01x03 J3
+U 1 1 5C6C6063
+P 2000 2700
+F 0 "J3" H 2080 2787 50  0000 L CNN
+F 1 "TPS" H 2080 2696 50  0000 L CNN
+F 2 "Speeduino Mini:ED120_3DS" H 2000 2700 50  0001 C CNN
+F 3 "~" H 2000 2700 50  0001 C CNN
+F 4 "ED1610-ND" H 2080 2605 50  0000 L CNN "DIGIKEY"
+	1    2000 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR048
+U 1 1 5C6C611A
+P 2250 2850
+F 0 "#PWR048" H 2250 2600 50  0001 C CNN
+F 1 "GND" H 2255 2677 50  0000 C CNN
+F 2 "" H 2250 2850 50  0001 C CNN
+F 3 "" H 2250 2850 50  0001 C CNN
+	1    2250 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2800 2250 2800
+Wire Wire Line
+	2250 2800 2250 2850
+$Comp
+L power:+5VA #PWR040
+U 1 1 5C6C7A9D
+P 2250 2550
+F 0 "#PWR040" H 2250 2400 50  0001 C CNN
+F 1 "+5VA" H 2265 2723 50  0000 C CNN
+F 2 "" H 2250 2550 50  0001 C CNN
+F 3 "" H 2250 2550 50  0001 C CNN
+	1    2250 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2600 2250 2600
+Wire Wire Line
+	2250 2600 2250 2550
+Wire Wire Line
+	2200 2700 2950 2700
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 5C6D10E6
+P 2000 3250
+F 0 "J4" H 2080 3287 50  0000 L CNN
+F 1 "IAT" H 2080 3196 50  0000 L CNN
+F 2 "Speeduino Mini:ED120_2DS" H 2000 3250 50  0001 C CNN
+F 3 "http://www.on-shore.com/wp-content/uploads/2015/09/ed120ds.pdf" H 2000 3250 50  0001 C CNN
+F 4 "ED1609-ND" H 2080 3105 50  0000 L CNN "DIGIKEY"
+	1    2000 3250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR049
+U 1 1 5C6D10EC
+P 2250 3400
+F 0 "#PWR049" H 2250 3150 50  0001 C CNN
+F 1 "GND" H 2255 3227 50  0000 C CNN
+F 2 "" H 2250 3400 50  0001 C CNN
+F 3 "" H 2250 3400 50  0001 C CNN
+	1    2250 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3350 2250 3350
+Wire Wire Line
+	2250 3350 2250 3400
+$Comp
+L Connector:Screw_Terminal_01x02 J5
+U 1 1 5C6D227D
+P 2000 3800
+F 0 "J5" H 2080 3837 50  0000 L CNN
+F 1 "head temperature" H 2080 3746 50  0000 L CNN
+F 2 "Speeduino Mini:ED120_2DS" H 2000 3800 50  0001 C CNN
+F 3 "http://www.on-shore.com/wp-content/uploads/2015/09/ed120ds.pdf" H 2000 3800 50  0001 C CNN
+F 4 "ED1609-ND" H 2080 3655 50  0000 L CNN "DIGIKEY"
+	1    2000 3800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR050
+U 1 1 5C6D2283
+P 2250 3950
+F 0 "#PWR050" H 2250 3700 50  0001 C CNN
+F 1 "GND" H 2255 3777 50  0000 C CNN
+F 2 "" H 2250 3950 50  0001 C CNN
+F 3 "" H 2250 3950 50  0001 C CNN
+	1    2250 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3900 2250 3900
+Wire Wire Line
+	2250 3900 2250 3950
+Wire Wire Line
+	2200 3250 2950 3250
+Wire Wire Line
+	2200 3800 2950 3800
+$Comp
+L Connector:Screw_Terminal_01x02 J6
+U 1 1 5C6D66F8
+P 2000 4800
+F 0 "J6" H 1920 5107 50  0000 C CNN
+F 1 "crank hall" H 1920 5016 50  0000 C CNN
+F 2 "Speeduino Mini:ED120_2DS" H 2000 4800 50  0001 C CNN
+F 3 "http://www.on-shore.com/wp-content/uploads/2015/09/ed120ds.pdf" H 2000 4800 50  0001 C CNN
+F 4 "ED1609-ND" H 1920 4925 50  0000 C CNN "DIGIKEY"
+	1    2000 4800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4800 2200 4800
+Wire Wire Line
+	2200 4900 2950 4900
+$Comp
+L Connector:Screw_Terminal_01x04 J11
+U 1 1 5C6DB810
+P 9050 3450
+F 0 "J11" H 9129 3487 50  0000 L CNN
+F 1 "Injectors" H 9129 3396 50  0000 L CNN
+F 2 "Speeduino Mini:ED120_4DS" H 9050 3450 50  0001 C CNN
+F 3 "~" H 9050 3450 50  0001 C CNN
+F 4 "ED2227-ND" H 9129 3305 50  0000 L CNN "DIGIKEY"
+	1    9050 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR052
+U 1 1 5C6DB941
+P 8800 3700
+F 0 "#PWR052" H 8800 3450 50  0001 C CNN
+F 1 "GND" H 8805 3527 50  0000 C CNN
+F 2 "" H 8800 3700 50  0001 C CNN
+F 3 "" H 8800 3700 50  0001 C CNN
+	1    8800 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 3650 8800 3650
+Wire Wire Line
+	8800 3650 8800 3700
+$Comp
+L power:+12V #PWR051
+U 1 1 5C6DC292
+P 8800 3300
+F 0 "#PWR051" H 8800 3150 50  0001 C CNN
+F 1 "+12V" H 8815 3473 50  0000 C CNN
+F 2 "" H 8800 3300 50  0001 C CNN
+F 3 "" H 8800 3300 50  0001 C CNN
+	1    8800 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 3550 8850 3550
+$Comp
+L Connector:Screw_Terminal_01x02 J7
+U 1 1 5C6E3466
+P 9050 1250
+F 0 "J7" H 9129 1287 50  0000 L CNN
+F 1 "Injector 1" H 9129 1196 50  0000 L CNN
+F 2 "Speeduino Mini:ED120_2DS" H 9050 1250 50  0001 C CNN
+F 3 "http://www.on-shore.com/wp-content/uploads/2015/09/ed120ds.pdf" H 9050 1250 50  0001 C CNN
+F 4 "ED1609-ND" H 9129 1105 50  0000 L CNN "DIGIKEY"
+	1    9050 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J8
+U 1 1 5C6E7AAC
+P 9050 1700
+F 0 "J8" H 9129 1737 50  0000 L CNN
+F 1 "Injector 2" H 9129 1646 50  0000 L CNN
+F 2 "Speeduino Mini:ED120_2DS" H 9050 1700 50  0001 C CNN
+F 3 "http://www.on-shore.com/wp-content/uploads/2015/09/ed120ds.pdf" H 9050 1700 50  0001 C CNN
+F 4 "ED1609-ND" H 9129 1555 50  0000 L CNN "DIGIKEY"
+	1    9050 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J9
+U 1 1 5C6E9B26
+P 9050 2150
+F 0 "J9" H 9129 2187 50  0000 L CNN
+F 1 "Injector 3" H 9129 2096 50  0000 L CNN
+F 2 "Speeduino Mini:ED120_2DS" H 9050 2150 50  0001 C CNN
+F 3 "http://www.on-shore.com/wp-content/uploads/2015/09/ed120ds.pdf" H 9050 2150 50  0001 C CNN
+F 4 "ED1609-ND" H 9129 2005 50  0000 L CNN "DIGIKEY"
+	1    9050 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J10
+U 1 1 5C6E9B2D
+P 9050 2600
+F 0 "J10" H 9129 2637 50  0000 L CNN
+F 1 "Injector 4" H 9129 2546 50  0000 L CNN
+F 2 "Speeduino Mini:ED120_2DS" H 9050 2600 50  0001 C CNN
+F 3 "http://www.on-shore.com/wp-content/uploads/2015/09/ed120ds.pdf" H 9050 2600 50  0001 C CNN
+F 4 "ED1609-ND" H 9129 2455 50  0000 L CNN "DIGIKEY"
+	1    9050 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 1350 8850 1350
+Wire Wire Line
+	7850 2250 8350 2250
+Wire Wire Line
+	8350 2250 8850 2250
+Wire Wire Line
+	7850 2700 8500 2700
+Wire Wire Line
+	8500 1800 8850 1800
+Wire Wire Line
+	8500 2700 8850 2700
+Wire Wire Line
+	7850 1250 8800 1250
+Wire Wire Line
+	8800 1250 8800 1700
+Wire Wire Line
+	8800 1700 8850 1700
+Connection ~ 8800 1250
+Wire Wire Line
+	8800 1250 8850 1250
+Wire Wire Line
+	8800 1700 8800 2150
+Wire Wire Line
+	8800 2150 8850 2150
+Connection ~ 8800 1700
+Wire Wire Line
+	8800 2150 8800 2600
+Wire Wire Line
+	8800 2600 8850 2600
+Connection ~ 8800 2150
+Connection ~ 8500 2700
+Wire Wire Line
+	8500 1800 8500 2700
+$Sheet
+S 2950 5250 1550 200 
+U 5C7018CC
+F0 "Oil Pressure Sensor" 50
+F1 "analog_sensor.sch" 50
+F2 "IN" I L 2950 5350 50 
+F3 "OUT" O R 4500 5350 50 
+$EndSheet
+Wire Wire Line
+	4500 5350 4750 5350
+$Comp
+L Connector:Screw_Terminal_01x03 J12
+U 1 1 5C702DAC
+P 2000 5350
+F 0 "J12" H 2080 5437 50  0000 L CNN
+F 1 "oil pressure" H 2080 5346 50  0000 L CNN
+F 2 "Speeduino Mini:ED120_3DS" H 2000 5350 50  0001 C CNN
+F 3 "~" H 2000 5350 50  0001 C CNN
+F 4 "ED1610-ND" H 2080 5255 50  0000 L CNN "DIGIKEY"
+	1    2000 5350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 5C702DB3
+P 2250 5500
+F 0 "#PWR022" H 2250 5250 50  0001 C CNN
+F 1 "GND" H 2255 5327 50  0000 C CNN
+F 2 "" H 2250 5500 50  0001 C CNN
+F 3 "" H 2250 5500 50  0001 C CNN
+	1    2250 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5450 2250 5450
+Wire Wire Line
+	2250 5450 2250 5500
+$Comp
+L power:+5VA #PWR019
+U 1 1 5C702DBB
+P 2250 5200
+F 0 "#PWR019" H 2250 5050 50  0001 C CNN
+F 1 "+5VA" H 2265 5373 50  0000 C CNN
+F 2 "" H 2250 5200 50  0001 C CNN
+F 3 "" H 2250 5200 50  0001 C CNN
+	1    2250 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5250 2250 5250
+Wire Wire Line
+	2250 5250 2250 5200
+Wire Wire Line
+	2200 5350 2950 5350
+$Sheet
+S 2950 6000 1550 200 
+U 5C704FE9
+F0 "Fuel Pressure" 50
+F1 "analog_sensor.sch" 50
+F2 "IN" I L 2950 6100 50 
+F3 "OUT" O R 4500 6100 50 
+$EndSheet
+Wire Wire Line
+	4500 6100 4750 6100
+$Comp
+L Connector:Screw_Terminal_01x03 J13
+U 1 1 5C7065B1
+P 2000 6100
+F 0 "J13" H 2080 6187 50  0000 L CNN
+F 1 "oil pressure" H 2080 6096 50  0000 L CNN
+F 2 "Speeduino Mini:ED120_3DS" H 2000 6100 50  0001 C CNN
+F 3 "~" H 2000 6100 50  0001 C CNN
+F 4 "ED1610-ND" H 2080 6005 50  0000 L CNN "DIGIKEY"
+	1    2000 6100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR057
+U 1 1 5C7065B7
+P 2250 6250
+F 0 "#PWR057" H 2250 6000 50  0001 C CNN
+F 1 "GND" H 2255 6077 50  0000 C CNN
+F 2 "" H 2250 6250 50  0001 C CNN
+F 3 "" H 2250 6250 50  0001 C CNN
+	1    2250 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 6200 2250 6200
+Wire Wire Line
+	2250 6200 2250 6250
+$Comp
+L power:+5VA #PWR056
+U 1 1 5C7065BF
+P 2250 5950
+F 0 "#PWR056" H 2250 5800 50  0001 C CNN
+F 1 "+5VA" H 2265 6123 50  0000 C CNN
+F 2 "" H 2250 5950 50  0001 C CNN
+F 3 "" H 2250 5950 50  0001 C CNN
+	1    2250 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 6000 2250 6000
+Wire Wire Line
+	2250 6000 2250 5950
+Wire Wire Line
+	2200 6100 2950 6100
+Connection ~ 8350 2250
+Wire Wire Line
+	8350 1350 8350 2250
+$Comp
+L Connector:Screw_Terminal_01x04 J1
+U 1 1 5C70C44B
+P 2000 1450
+F 0 "J1" H 2080 1487 50  0000 L CNN
+F 1 "O2" H 2080 1396 50  0000 L CNN
+F 2 "Speeduino Mini:ED120_4DS" H 2000 1450 50  0001 C CNN
+F 3 "~" H 2000 1450 50  0001 C CNN
+F 4 "ED2227-ND" H 2080 1305 50  0000 L CNN "DIGIKEY"
+	1    2000 1450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1450 2250 1450
+Wire Wire Line
+	2250 1450 2250 1650
+Connection ~ 2250 1650
+$Sheet
+S 8000 5100 1650 750 
+U 5C95BECF
+F0 "Power" 50
+F1 "power.sch" 50
+$EndSheet
+NoConn ~ 6650 5350
+Wire Wire Line
+	6500 5350 6650 5350
+NoConn ~ 6650 5450
+Wire Wire Line
+	6500 5450 6650 5450
+NoConn ~ 6650 5550
+Wire Wire Line
+	6500 5550 6650 5550
+$Sheet
+S 2950 1150 1550 200 
+U 5C96AA00
+F0 "O2 Sensor Power" 50
+F1 "switch_4a.sch" 50
+F2 "EN" I R 4500 1250 50 
+F3 "OUT" O L 2950 1250 50 
+$EndSheet
+Text Notes 4300 -450 0    50   ~ 0
+TODO: add LEDs?
+Wire Wire Line
+	2200 1350 2250 1350
+Wire Wire Line
+	2250 1350 2250 1250
+Wire Wire Line
+	2250 1250 2950 1250
+Wire Wire Line
+	2200 1550 2600 1550
+Wire Wire Line
+	2600 1550 2600 1650
+Wire Wire Line
+	2600 1650 2950 1650
+Wire Wire Line
+	4750 1250 4500 1250
+Wire Wire Line
+	4500 1650 4750 1650
+Wire Wire Line
+	8800 3300 8800 3450
+Wire Wire Line
+	8800 3450 8850 3450
+Wire Wire Line
+	8850 3350 8600 3350
+Wire Wire Line
+	8600 3350 8600 3450
+Wire Wire Line
+	8600 3450 7850 3450
+$EndSCHEMATC

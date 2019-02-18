@@ -1,0 +1,259 @@
+EESchema Schematic File Version 4
+LIBS:speeduino_mini-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 12 18
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L speeduino_mini:TC4424_SOIC U5
+U 1 1 5C670210
+P 6750 4300
+AR Path="/5C66F28B/5C670210" Ref="U5"  Part="1" 
+AR Path="/5C674DB1/5C670210" Ref="U6"  Part="1" 
+F 0 "U5" H 6750 5155 50  0000 C CNN
+F 1 "TC4424_SOIC" H 6750 5064 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16W_7.5x10.3mm_Pitch1.27mm" H 6400 4750 50  0001 C CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en027108" H 6400 4750 50  0001 C CNN
+F 4 "TC4424AVOA713CT-ND" H 6750 4973 50  0000 C CNN "DIGIKEY"
+	1    6750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 5C6702C9
+P 3950 4100
+AR Path="/5C66F28B/5C6702C9" Ref="R21"  Part="1" 
+AR Path="/5C674DB1/5C6702C9" Ref="R29"  Part="1" 
+F 0 "R21" V 3653 4100 50  0000 C CNN
+F 1 "150" V 3744 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3880 4100 50  0001 C CNN
+F 3 "~" H 3950 4100 50  0001 C CNN
+F 4 "311-150CRCT-ND" V 3835 4100 50  0000 C CNN "DIGIKEY"
+	1    3950 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 5C67035E
+P 4450 4800
+AR Path="/5C66F28B/5C67035E" Ref="R23"  Part="1" 
+AR Path="/5C674DB1/5C67035E" Ref="R31"  Part="1" 
+F 0 "R23" H 4380 4709 50  0000 R CNN
+F 1 "10k" H 4380 4800 50  0000 R CNN
+F 2 "Resistors_SMD:R_0805" V 4380 4800 50  0001 C CNN
+F 3 "~" H 4450 4800 50  0001 C CNN
+F 4 "311-10.0KCRCT-ND" H 4380 4891 50  0000 R CNN "DIGIKEY"
+	1    4450 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R24
+U 1 1 5C6703B1
+P 5450 4800
+AR Path="/5C66F28B/5C6703B1" Ref="R24"  Part="1" 
+AR Path="/5C674DB1/5C6703B1" Ref="R32"  Part="1" 
+F 0 "R24" H 5380 4709 50  0000 R CNN
+F 1 "10k" H 5380 4800 50  0000 R CNN
+F 2 "Resistors_SMD:R_0805" V 5380 4800 50  0001 C CNN
+F 3 "~" H 5450 4800 50  0001 C CNN
+F 4 "311-10.0KCRCT-ND" H 5380 4891 50  0000 R CNN "DIGIKEY"
+	1    5450 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 4100 4450 4100
+Wire Wire Line
+	4100 4500 5450 4500
+Wire Wire Line
+	4450 4650 4450 4100
+Connection ~ 4450 4100
+Wire Wire Line
+	4450 4100 6300 4100
+Wire Wire Line
+	5450 4650 5450 4500
+Connection ~ 5450 4500
+Wire Wire Line
+	5450 4500 6300 4500
+$Comp
+L power:GND #PWR033
+U 1 1 5C670451
+P 6550 5150
+AR Path="/5C66F28B/5C670451" Ref="#PWR033"  Part="1" 
+AR Path="/5C674DB1/5C670451" Ref="#PWR037"  Part="1" 
+F 0 "#PWR033" H 6550 4900 50  0001 C CNN
+F 1 "GND" H 6555 4977 50  0000 C CNN
+F 2 "" H 6550 5150 50  0001 C CNN
+F 3 "" H 6550 5150 50  0001 C CNN
+	1    6550 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4950 4450 5050
+Wire Wire Line
+	4450 5050 5450 5050
+Wire Wire Line
+	6550 5050 6550 5150
+Wire Wire Line
+	5450 4950 5450 5050
+Connection ~ 5450 5050
+Wire Wire Line
+	5450 5050 6550 5050
+Wire Wire Line
+	7200 4800 7300 4800
+Wire Wire Line
+	7300 4800 7300 5050
+Wire Wire Line
+	7300 5050 6550 5050
+Connection ~ 6550 5050
+Wire Wire Line
+	7200 4700 7300 4700
+Wire Wire Line
+	7300 4700 7300 4800
+Connection ~ 7300 4800
+$Comp
+L Device:R R27
+U 1 1 5C670644
+P 8150 4150
+AR Path="/5C66F28B/5C670644" Ref="R27"  Part="1" 
+AR Path="/5C674DB1/5C670644" Ref="R35"  Part="1" 
+F 0 "R27" V 7853 4150 50  0000 C CNN
+F 1 "160" V 7944 4150 50  0000 C CNN
+F 2 "Resistors_SMD:R_2512" V 8080 4150 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=9-1773463-5&DocType=DS&DocLang=English" H 8150 4150 50  0001 C CNN
+F 4 "A116013CT-ND" V 8035 4150 50  0000 C CNN "DIGIKEY"
+	1    8150 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 4100 7300 4100
+Wire Wire Line
+	7300 4100 7300 4150
+Wire Wire Line
+	7300 4200 7200 4200
+Wire Wire Line
+	7200 4400 7300 4400
+Wire Wire Line
+	7300 4400 7300 4450
+Wire Wire Line
+	7300 4500 7200 4500
+Wire Wire Line
+	7300 4150 8000 4150
+Connection ~ 7300 4150
+Wire Wire Line
+	7300 4150 7300 4200
+Wire Wire Line
+	7300 4450 8000 4450
+Connection ~ 7300 4450
+Wire Wire Line
+	7300 4450 7300 4500
+Text HLabel 3550 4100 0    50   Input ~ 0
+IGN1_IN
+Text HLabel 3550 4500 0    50   Input ~ 0
+IGN2_IN
+Wire Wire Line
+	3550 4100 3800 4100
+Wire Wire Line
+	3800 4500 3550 4500
+Wire Wire Line
+	7450 3350 7450 3250
+Wire Wire Line
+	7200 3900 7300 3900
+Wire Wire Line
+	7300 3900 7300 3800
+Wire Wire Line
+	7300 3800 7200 3800
+Wire Wire Line
+	7300 3350 7300 3800
+Wire Wire Line
+	7300 3350 7450 3350
+Connection ~ 7300 3800
+$Comp
+L Device:C C22
+U 1 1 5C6736DB
+P 7600 3500
+AR Path="/5C66F28B/5C6736DB" Ref="C22"  Part="1" 
+AR Path="/5C674DB1/5C6736DB" Ref="C23"  Part="1" 
+F 0 "C22" H 7715 3591 50  0000 L CNN
+F 1 "1u" H 7715 3500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7638 3350 50  0001 C CNN
+F 3 "~" H 7600 3500 50  0001 C CNN
+F 4 "SQ2318AES-T1_GE3" H 7715 3409 50  0000 L CNN "DIGIKEY"
+	1    7600 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3350 7600 3350
+Connection ~ 7450 3350
+$Comp
+L power:GND #PWR036
+U 1 1 5C673D43
+P 7600 3650
+AR Path="/5C66F28B/5C673D43" Ref="#PWR036"  Part="1" 
+AR Path="/5C674DB1/5C673D43" Ref="#PWR040"  Part="1" 
+F 0 "#PWR036" H 7600 3400 50  0001 C CNN
+F 1 "GND" H 7605 3477 50  0000 C CNN
+F 2 "" H 7600 3650 50  0001 C CNN
+F 3 "" H 7600 3650 50  0001 C CNN
+	1    7600 3650
+	1    0    0    -1  
+$EndComp
+Text HLabel 8900 4150 2    50   Output ~ 0
+IGN1_OUT
+Text HLabel 8900 4450 2    50   Output ~ 0
+IGN2_OUT
+Wire Wire Line
+	8900 4150 8300 4150
+Wire Wire Line
+	8300 4450 8900 4450
+$Comp
+L Device:R R22
+U 1 1 5C6966BE
+P 3950 4500
+AR Path="/5C66F28B/5C6966BE" Ref="R22"  Part="1" 
+AR Path="/5C674DB1/5C6966BE" Ref="R30"  Part="1" 
+F 0 "R22" V 3653 4500 50  0000 C CNN
+F 1 "150" V 3744 4500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3880 4500 50  0001 C CNN
+F 3 "~" H 3950 4500 50  0001 C CNN
+F 4 "311-150CRCT-ND" V 3835 4500 50  0000 C CNN "DIGIKEY"
+	1    3950 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R28
+U 1 1 5C69AA6B
+P 8150 4450
+AR Path="/5C66F28B/5C69AA6B" Ref="R28"  Part="1" 
+AR Path="/5C674DB1/5C69AA6B" Ref="R36"  Part="1" 
+F 0 "R28" V 8265 4450 50  0000 C CNN
+F 1 "160" V 8356 4450 50  0000 C CNN
+F 2 "Resistors_SMD:R_2512" V 8080 4450 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=9-1773463-5&DocType=DS&DocLang=English" H 8150 4450 50  0001 C CNN
+F 4 "A116013CT-ND" V 8447 4450 50  0000 C CNN "DIGIKEY"
+	1    8150 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR035
+U 1 1 5C6730A0
+P 7450 3250
+AR Path="/5C66F28B/5C6730A0" Ref="#PWR035"  Part="1" 
+AR Path="/5C674DB1/5C6730A0" Ref="#PWR039"  Part="1" 
+F 0 "#PWR035" H 7450 3100 50  0001 C CNN
+F 1 "+5V" H 7465 3423 50  0000 C CNN
+F 2 "" H 7450 3250 50  0001 C CNN
+F 3 "" H 7450 3250 50  0001 C CNN
+	1    7450 3250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

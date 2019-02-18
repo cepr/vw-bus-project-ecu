@@ -1,0 +1,86 @@
+EESchema Schematic File Version 4
+LIBS:speeduino_mini-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 18
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4500 3650 0    50   Output ~ 0
+HALL_SENSOR+
+$Comp
+L Device:R R16
+U 1 1 5C664646
+P 4600 3400
+F 0 "R16" H 4670 3491 50  0000 L CNN
+F 1 "1k" H 4670 3400 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 4530 3400 50  0001 C CNN
+F 3 "~" H 4600 3400 50  0001 C CNN
+F 4 "311-1.00KCRCT-ND" H 4670 3309 50  0000 L CNN "DIGIKEY"
+	1    4600 3400
+	1    0    0    -1  
+$EndComp
+Text HLabel 4500 3750 0    50   Input ~ 0
+HALL_SENSOR-
+$Comp
+L power:+5V #PWR029
+U 1 1 5C6646A4
+P 4600 3200
+F 0 "#PWR029" H 4600 3050 50  0001 C CNN
+F 1 "+5V" H 4615 3373 50  0000 C CNN
+F 2 "" H 4600 3200 50  0001 C CNN
+F 3 "" H 4600 3200 50  0001 C CNN
+	1    4600 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3200 4600 3250
+Wire Wire Line
+	4600 3550 4600 3650
+Wire Wire Line
+	4600 3650 4500 3650
+Wire Wire Line
+	4500 3750 4600 3750
+Wire Wire Line
+	4600 3750 4600 3850
+$Comp
+L power:GND #PWR030
+U 1 1 5C664742
+P 4600 4250
+F 0 "#PWR030" H 4600 4000 50  0001 C CNN
+F 1 "GND" H 4605 4077 50  0000 C CNN
+F 2 "" H 4600 4250 50  0001 C CNN
+F 3 "" H 4600 4250 50  0001 C CNN
+	1    4600 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4150 4600 4250
+Wire Wire Line
+	4600 3750 4700 3750
+Connection ~ 4600 3750
+Text HLabel 4700 3750 2    50   Output ~ 0
+CRANK_Output
+$Comp
+L Device:C C?
+U 1 1 5C6BC4A7
+P 4600 4000
+AR Path="/5C653342/5C6BC4A7" Ref="C?"  Part="1" 
+AR Path="/5C6645CA/5C6BC4A7" Ref="C21"  Part="1" 
+F 0 "C21" H 4715 4091 50  0000 L CNN
+F 1 "0.01u" H 4715 4000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4638 3850 50  0001 C CNN
+F 3 "~" H 4600 4000 50  0001 C CNN
+F 4 "311-3157-1-ND" H 4715 3909 50  0000 L CNN "DIGIKEY"
+	1    4600 4000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

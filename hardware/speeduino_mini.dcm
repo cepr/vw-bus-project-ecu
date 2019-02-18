@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FDS6670AS
+D N-MOSFET transistor, drain/gate/source
+K transistor NMOS N-MOS N-MOSFET
+F ~
+$ENDCMP
+#
+$CMP Q_PMOS_DGS
+D P-MOSFET transistor, drain/gate/source
+K transistor PMOS P-MOS P-MOSFET
+F ~
+$ENDCMP
+#
+$CMP SQ3457EV
+D P-MOSFET transistor, drain/gate/source
+K transistor PMOS P-MOS P-MOSFET
+F ~
+$ENDCMP
+#
+$CMP TPD2E001-SOT-5
+D Dual-Channel High-Speed ESD Protection
+K ESD-Protection
+F http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf
+$ENDCMP
+#
+$CMP TPD4E001-Q1
+D 4-Channel ESD Protection for Super-Speed USB 3.0 Interface, USON-10
+K ESD protection USB 3.0
+F http://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf
+$ENDCMP
+#
+#End Doc Library
