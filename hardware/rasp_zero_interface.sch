@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 18
+Sheet 18 18
 Title ""
 Date ""
 Rev ""
@@ -14,4 +14,356 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L power:GND #PWR038
+U 1 1 5C798B01
+P 7100 5550
+F 0 "#PWR038" H 7100 5300 50  0001 C CNN
+F 1 "GND" H 7105 5377 50  0000 C CNN
+F 2 "" H 7100 5550 50  0001 C CNN
+F 3 "" H 7100 5550 50  0001 C CNN
+	1    7100 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VA #PWR036
+U 1 1 5C798B2A
+P 7050 2550
+F 0 "#PWR036" H 7050 2400 50  0001 C CNN
+F 1 "+5VA" H 7065 2723 50  0000 C CNN
+F 2 "" H 7050 2550 50  0001 C CNN
+F 3 "" H 7050 2550 50  0001 C CNN
+	1    7050 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Raspberry_Pi_2_3 J2
+U 1 1 5C798BA0
+P 7150 4050
+F 0 "J2" H 8400 4350 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 8400 4250 50  0000 C CNN
+F 2 "Speeduino Mini:RaspberryPi_uHAT" H 7150 4050 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 7150 4050 50  0001 C CNN
+	1    7150 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2750 6950 2650
+Wire Wire Line
+	6950 2650 7050 2650
+Connection ~ 7050 2650
+Wire Wire Line
+	7050 2650 7050 2750
+Wire Wire Line
+	6750 5350 6750 5450
+Wire Wire Line
+	6750 5450 6850 5450
+Wire Wire Line
+	7100 5450 7100 5550
+Wire Wire Line
+	7100 5450 7150 5450
+Wire Wire Line
+	7450 5450 7450 5350
+Connection ~ 7100 5450
+Wire Wire Line
+	7350 5350 7350 5450
+Connection ~ 7350 5450
+Wire Wire Line
+	7350 5450 7450 5450
+Wire Wire Line
+	7250 5350 7250 5450
+Connection ~ 7250 5450
+Wire Wire Line
+	7250 5450 7350 5450
+Wire Wire Line
+	7150 5350 7150 5450
+Connection ~ 7150 5450
+Wire Wire Line
+	7150 5450 7250 5450
+Wire Wire Line
+	7050 5350 7050 5450
+Connection ~ 7050 5450
+Wire Wire Line
+	7050 5450 7100 5450
+Wire Wire Line
+	6950 5350 6950 5450
+Connection ~ 6950 5450
+Wire Wire Line
+	6950 5450 7050 5450
+Wire Wire Line
+	6850 5350 6850 5450
+Connection ~ 6850 5450
+Wire Wire Line
+	6850 5450 6950 5450
+Text HLabel 2550 4350 0    50   Output ~ 0
+ATMEGA_RESET
+Text HLabel 2550 3150 0    50   Output ~ 0
+TXD_PDI
+Text HLabel 2600 6200 0    50   Input ~ 0
+RXD_PDO
+$Comp
+L speeduino_mini:SN74LVC2T45-VSSOP U5
+U 1 1 5C7C9A44
+P 4200 3200
+F 0 "U5" H 4200 3705 50  0000 C CNN
+F 1 "SN74LVC2T45-VSSOP" H 4200 3614 50  0000 C CNN
+F 2 "Housings_SSOP:VSSOP-8_2.3x2mm_Pitch0.5mm" H 4200 2600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf" H 4200 2500 50  0001 C CNN
+F 4 "296-17014-1-ND" H 4200 3523 50  0000 C CNN "DIGIKEY"
+	1    4200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L speeduino_mini:SN74LVC2T45-VSSOP U10
+U 1 1 5C7C9C8D
+P 4200 6150
+F 0 "U10" H 4200 6655 50  0000 C CNN
+F 1 "SN74LVC2T45-VSSOP" H 4200 6564 50  0000 C CNN
+F 2 "Housings_SSOP:VSSOP-8_2.3x2mm_Pitch0.5mm" H 4200 5550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf" H 4200 5450 50  0001 C CNN
+F 4 "296-17014-1-ND" H 4200 6473 50  0000 C CNN "DIGIKEY"
+	1    4200 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3150 4600 3150
+Wire Wire Line
+	4800 3050 4600 3050
+Wire Wire Line
+	4600 6000 4800 6000
+$Comp
+L power:+5VD #PWR029
+U 1 1 5C7CBDE0
+P 3550 2600
+F 0 "#PWR029" H 3550 2450 50  0001 C CNN
+F 1 "+5VD" H 3565 2773 50  0000 C CNN
+F 2 "" H 3550 2600 50  0001 C CNN
+F 3 "" H 3550 2600 50  0001 C CNN
+	1    3550 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3050 3800 3050
+Wire Wire Line
+	3800 6000 3550 6000
+Connection ~ 3550 3050
+$Comp
+L power:GND #PWR035
+U 1 1 5C7CCF13
+P 3700 6400
+F 0 "#PWR035" H 3700 6150 50  0001 C CNN
+F 1 "GND" H 3705 6227 50  0000 C CNN
+F 2 "" H 3700 6400 50  0001 C CNN
+F 3 "" H 3700 6400 50  0001 C CNN
+	1    3700 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 6300 3700 6300
+Wire Wire Line
+	3700 6300 3700 6400
+$Comp
+L power:GND #PWR033
+U 1 1 5C7CD5D7
+P 3700 3650
+F 0 "#PWR033" H 3700 3400 50  0001 C CNN
+F 1 "GND" H 3705 3477 50  0000 C CNN
+F 2 "" H 3700 3650 50  0001 C CNN
+F 3 "" H 3700 3650 50  0001 C CNN
+	1    3700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3350 3700 3350
+Wire Wire Line
+	3700 3350 3700 3550
+Wire Wire Line
+	3800 3150 2550 3150
+Wire Wire Line
+	3800 3250 2550 3250
+Wire Wire Line
+	6350 3250 6000 3250
+Wire Wire Line
+	3800 6200 2600 6200
+Wire Wire Line
+	3800 6100 3550 6100
+Wire Wire Line
+	3550 6100 3550 6000
+Wire Wire Line
+	7050 2550 7050 2650
+Wire Wire Line
+	6000 3250 6000 6200
+Wire Wire Line
+	6000 6200 4600 6200
+Wire Wire Line
+	4600 3350 4600 3550
+Wire Wire Line
+	4600 3550 3700 3550
+Connection ~ 3700 3550
+Wire Wire Line
+	3700 3550 3700 3650
+Wire Wire Line
+	4600 6300 4600 6700
+Wire Wire Line
+	4600 6700 3550 6700
+Wire Wire Line
+	3550 6700 3550 6100
+Connection ~ 3550 6100
+Wire Wire Line
+	4600 3250 4700 3250
+Wire Wire Line
+	4700 3250 4700 3650
+Wire Wire Line
+	4700 3650 6350 3650
+Wire Wire Line
+	7250 2750 7250 2200
+Wire Wire Line
+	7250 2200 4800 2200
+Wire Wire Line
+	4800 2200 4800 3050
+Connection ~ 4800 3050
+Wire Wire Line
+	7350 2750 7350 2200
+Wire Wire Line
+	7350 2200 7250 2200
+Connection ~ 7250 2200
+$Comp
+L speeduino_mini:SN74LVC2T45-VSSOP U9
+U 1 1 5C7F19B6
+P 4200 4400
+F 0 "U9" H 4200 4905 50  0000 C CNN
+F 1 "SN74LVC2T45-VSSOP" H 4200 4814 50  0000 C CNN
+F 2 "Housings_SSOP:VSSOP-8_2.3x2mm_Pitch0.5mm" H 4200 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf" H 4200 3700 50  0001 C CNN
+F 4 "296-17014-1-ND" H 4200 4723 50  0000 C CNN "DIGIKEY"
+	1    4200 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR034
+U 1 1 5C7F19BD
+P 3700 4850
+F 0 "#PWR034" H 3700 4600 50  0001 C CNN
+F 1 "GND" H 3705 4677 50  0000 C CNN
+F 2 "" H 3700 4850 50  0001 C CNN
+F 3 "" H 3700 4850 50  0001 C CNN
+	1    3700 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4550 3700 4550
+Wire Wire Line
+	3700 4550 3700 4750
+Wire Wire Line
+	4600 4550 4600 4750
+Wire Wire Line
+	4600 4750 3700 4750
+Connection ~ 3700 4750
+Wire Wire Line
+	3700 4750 3700 4850
+Wire Wire Line
+	4600 4250 4800 4250
+Wire Wire Line
+	3800 4250 3550 4250
+Connection ~ 3550 4250
+Wire Wire Line
+	3550 4250 3550 3050
+Text HLabel 2550 3250 0    50   Output ~ 0
+SCK
+Wire Wire Line
+	4600 6100 6100 6100
+Wire Wire Line
+	6100 6100 6100 4450
+Wire Wire Line
+	6100 4450 6350 4450
+Text Notes 6900 1850 0    50   ~ 0
+ATMEGA2561 ICSP Programming:\nGPIO14 - PDI\nGPIO15 - PDO\nGPIO18 - SCK\nGPIO23 - RST\nGPIO24 - VCC
+Wire Wire Line
+	5000 4350 6350 4350
+Wire Wire Line
+	5000 3900 4800 3900
+Connection ~ 4800 3900
+Wire Wire Line
+	4800 3900 4800 3050
+Wire Wire Line
+	5000 4350 5000 4300
+Wire Wire Line
+	5000 4000 5000 3900
+Wire Wire Line
+	3800 4350 3200 4350
+Wire Wire Line
+	2900 4350 2550 4350
+NoConn ~ 6350 3450
+NoConn ~ 6350 3550
+NoConn ~ 6350 3850
+NoConn ~ 6350 3950
+NoConn ~ 6350 4050
+NoConn ~ 6350 4250
+NoConn ~ 6350 4650
+NoConn ~ 6350 4750
+NoConn ~ 7950 4850
+NoConn ~ 7950 4750
+NoConn ~ 7950 4550
+NoConn ~ 7950 4450
+NoConn ~ 7950 4350
+NoConn ~ 7950 4150
+NoConn ~ 7950 3950
+NoConn ~ 7950 3850
+NoConn ~ 7950 3750
+NoConn ~ 7950 3550
+NoConn ~ 7950 3450
+NoConn ~ 7950 3250
+NoConn ~ 7950 3150
+$Comp
+L Device:R R?
+U 1 1 5C838946
+P 5000 4150
+AR Path="/5C66F28B/5C838946" Ref="R?"  Part="1" 
+AR Path="/5C674DB1/5C838946" Ref="R?"  Part="1" 
+AR Path="/5C679A94/5C838946" Ref="R?"  Part="1" 
+AR Path="/5C838946" Ref="R?"  Part="1" 
+AR Path="/5C6B9F28/5C838946" Ref="R24"  Part="1" 
+F 0 "R24" H 4930 4059 50  0000 R CNN
+F 1 "10k" H 4930 4150 50  0000 R CNN
+F 2 "Resistors_SMD:R_0805" V 4930 4150 50  0001 C CNN
+F 3 "~" H 5000 4150 50  0001 C CNN
+F 4 "311-10.0KCRCT-ND" H 4930 4241 50  0000 R CNN "DIGIKEY"
+	1    5000 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C83C8E7
+P 3050 4350
+AR Path="/5C667F1A/5C83C8E7" Ref="R?"  Part="1" 
+AR Path="/5C668FC1/5C83C8E7" Ref="R?"  Part="1" 
+AR Path="/5C6B9F28/5C83C8E7" Ref="R23"  Part="1" 
+F 0 "R23" V 2753 4350 50  0000 C CNN
+F 1 "150" V 2844 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 2980 4350 50  0001 C CNN
+F 3 "~" H 3050 4350 50  0001 C CNN
+F 4 "311-150CRCT-ND" V 2935 4350 50  0000 C CNN "DIGIKEY"
+	1    3050 4350
+	0    1    1    0   
+$EndComp
+Text Notes 1750 1700 0    50   ~ 0
+Note: In order to program the ATMEGA2561 using the Raspberry PI, the Raspberry PI has to be self-powered.\nThis will also back-power all the sensors.\nMake sure to use a 2A power supply.
+Connection ~ 4800 4250
+Wire Wire Line
+	4800 4250 4800 3900
+Wire Wire Line
+	4800 4250 4800 6000
+Wire Wire Line
+	4600 4350 5000 4350
+Connection ~ 5000 4350
+NoConn ~ 3800 4450
+Wire Wire Line
+	3550 4250 3550 6000
+Connection ~ 3550 6000
+Wire Wire Line
+	3550 2600 3550 3050
+Wire Wire Line
+	4600 4550 4600 4450
+Connection ~ 4600 4550
+NoConn ~ 6350 4550
 $EndSCHEMATC
