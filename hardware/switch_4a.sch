@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:speeduino_mini-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 15 18
+Sheet 15 21
 Title ""
 Date ""
 Rev ""
@@ -64,7 +64,7 @@ P 5800 4050
 F 0 "Q3" H 6006 4141 50  0000 L CNN
 F 1 "2N7002" H 6006 4050 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 6000 3975 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 5800 4050 50  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5800 4050 50  0001 L CNN
 F 4 "2N7002NCT-ND" H 6006 3959 50  0000 L CNN "DIGIKEY"
 	1    5800 4050
 	1    0    0    -1  

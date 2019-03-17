@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:speeduino_mini-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 18
+Sheet 2 21
 Title ""
 Date ""
 Rev ""
@@ -38,18 +38,12 @@ Text HLabel 750  4800 0    50   Input ~ 0
 A0
 Text HLabel 750  4900 0    50   Input ~ 0
 A1
-Wire Wire Line
-	5700 5200 4450 5200
 Text HLabel 750  5200 0    50   Input ~ 0
 A4
 Text HLabel 750  5300 0    50   Input ~ 0
 A5
 Text HLabel 750  5400 0    50   Input ~ 0
 A6
-Wire Wire Line
-	5700 5300 3350 5300
-Wire Wire Line
-	750  5400 3250 5400
 $Comp
 L Device:Crystal_GND2 Y1
 U 1 1 5C7332A0
@@ -202,8 +196,6 @@ Wire Wire Line
 	4750 3950 4750 4000
 Text HLabel 750  5500 0    50   Input ~ 0
 A7
-Wire Wire Line
-	750  5500 4350 5500
 $Comp
 L speeduino_mini:TPD4E001-Q1 U1
 U 1 1 5C77097F
@@ -230,29 +222,9 @@ $EndComp
 Wire Wire Line
 	1550 7050 2300 7050
 Wire Wire Line
-	4350 6450 4350 5500
-Connection ~ 4350 5500
-Wire Wire Line
-	4350 5500 5700 5500
-Wire Wire Line
 	3350 6650 3250 6650
 Wire Wire Line
-	3250 6650 3250 5400
-Connection ~ 3250 5400
-Wire Wire Line
-	3250 5400 5700 5400
-Wire Wire Line
-	3350 6450 3350 5300
-Connection ~ 3350 5300
-Wire Wire Line
-	3350 5300 750  5300
-Wire Wire Line
 	4350 6650 4450 6650
-Wire Wire Line
-	4450 6650 4450 5200
-Connection ~ 4450 5200
-Wire Wire Line
-	4450 5200 750  5200
 Wire Wire Line
 	1050 6650 950  6650
 Wire Wire Line
@@ -326,12 +298,8 @@ Connection ~ 3850 7050
 Wire Wire Line
 	3850 6000 3850 5900
 Connection ~ 3850 6000
-Wire Wire Line
-	6900 5800 7300 5800
 Text HLabel 9650 5800 2    50   Input ~ 0
 INT1
-Wire Wire Line
-	6900 5700 7200 5700
 Wire Wire Line
 	6900 6000 9650 6000
 Text HLabel 9650 5700 2    50   Input ~ 0
@@ -341,67 +309,17 @@ RXD1
 Text HLabel 9650 6000 2    50   Output ~ 0
 TXD1
 $Comp
-L speeduino_mini:TPD2E001-SOT-5 U6
-U 1 1 5C87473B
-P 7800 4950
-F 0 "U6" H 8030 5041 50  0000 L CNN
-F 1 "TPD2E001-SOT-5" H 8030 4950 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-553" H 8050 4850 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tpd2e001.pdf" H 8050 4750 50  0001 L CNN
-F 4 "296-21883-1-ND" H 8030 4859 50  0000 L CNN "DIGIKEY"
-	1    7800 4950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C5
 U 1 1 5C87485F
-P 8850 4950
-F 0 "C5" H 8965 5041 50  0000 L CNN
-F 1 "100nF" H 8965 4950 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 8888 4800 50  0001 C CNN
-F 3 "~" H 8850 4950 50  0001 C CNN
-F 4 "478-6048-1-ND" H 8965 4859 50  0000 L CNN "DIGIKEY"
-	1    8850 4950
+P 9500 4600
+F 0 "C5" H 9615 4691 50  0000 L CNN
+F 1 "100nF" H 9615 4600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 9538 4450 50  0001 C CNN
+F 3 "~" H 9500 4600 50  0001 C CNN
+F 4 "478-6048-1-ND" H 9615 4509 50  0000 L CNN "DIGIKEY"
+	1    9500 4600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7800 4650 7800 4600
-Wire Wire Line
-	8850 4600 8850 4800
-Wire Wire Line
-	7800 5250 7800 5300
-Wire Wire Line
-	7800 5300 8350 5300
-Wire Wire Line
-	8850 5300 8850 5100
-$Comp
-L power:GND #PWR016
-U 1 1 5C8837B8
-P 8350 5300
-F 0 "#PWR016" H 8350 5050 50  0001 C CNN
-F 1 "GND" H 8355 5127 50  0000 C CNN
-F 2 "" H 8350 5300 50  0001 C CNN
-F 3 "" H 8350 5300 50  0001 C CNN
-	1    8350 5300
-	1    0    0    -1  
-$EndComp
-Connection ~ 8350 5300
-Wire Wire Line
-	8350 5300 8850 5300
-Wire Wire Line
-	7500 4850 7200 4850
-Wire Wire Line
-	7200 4850 7200 5700
-Connection ~ 7200 5700
-Wire Wire Line
-	7200 5700 9650 5700
-Wire Wire Line
-	7500 5050 7300 5050
-Wire Wire Line
-	7300 5050 7300 5800
-Connection ~ 7300 5800
-Wire Wire Line
-	7300 5800 9650 5800
 Text HLabel 7100 4600 2    50   Output ~ 0
 PB7
 Wire Wire Line
@@ -414,10 +332,6 @@ Wire Wire Line
 	7100 4400 6900 4400
 Text HLabel 7100 4400 2    50   Output ~ 0
 OC1A
-Text HLabel 7100 4300 2    50   Output ~ 0
-OC2A
-Wire Wire Line
-	6900 4300 7100 4300
 Text HLabel 5550 6200 0    50   Output ~ 0
 OC3C
 Wire Wire Line
@@ -449,34 +363,6 @@ Wire Wire Line
 	6900 3000 7100 3000
 Text HLabel 7100 3000 2    50   Output ~ 0
 PA0
-Wire Wire Line
-	2150 4800 750  4800
-Wire Wire Line
-	5700 4800 2150 4800
-Connection ~ 2150 4800
-Wire Wire Line
-	2150 6650 2150 4800
-Wire Wire Line
-	1050 4900 750  4900
-Wire Wire Line
-	5700 4900 1050 4900
-Connection ~ 1050 4900
-Wire Wire Line
-	1050 6450 1050 4900
-Wire Wire Line
-	950  5000 750  5000
-Wire Wire Line
-	5700 5000 950  5000
-Connection ~ 950  5000
-Wire Wire Line
-	950  5000 950  6650
-Wire Wire Line
-	2050 5100 750  5100
-Wire Wire Line
-	5700 5100 2050 5100
-Connection ~ 2050 5100
-Wire Wire Line
-	2050 6450 2050 5100
 $Comp
 L Device:C C6
 U 1 1 5C743651
@@ -675,19 +561,14 @@ $EndComp
 $Comp
 L power:+5VD #PWR015
 U 1 1 5C789D76
-P 8350 4600
-F 0 "#PWR015" H 8350 4450 50  0001 C CNN
-F 1 "+5VD" H 8365 4773 50  0000 C CNN
-F 2 "" H 8350 4600 50  0001 C CNN
-F 3 "" H 8350 4600 50  0001 C CNN
-	1    8350 4600
+P 8750 4000
+F 0 "#PWR015" H 8750 3850 50  0001 C CNN
+F 1 "+5VD" H 8765 4173 50  0000 C CNN
+F 2 "" H 8750 4000 50  0001 C CNN
+F 3 "" H 8750 4000 50  0001 C CNN
+	1    8750 4000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7800 4600 8350 4600
-Connection ~ 8350 4600
-Wire Wire Line
-	8350 4600 8850 4600
 Text HLabel 7100 4000 2    50   Input ~ 0
 SCK
 Wire Wire Line
@@ -701,4 +582,123 @@ RESET
 Wire Wire Line
 	5300 3000 5400 3000
 Connection ~ 5400 3000
+$Comp
+L speeduino_mini:TPD4E001-Q1 U6
+U 1 1 5C8FE76E
+P 8750 4600
+F 0 "U6" H 8750 5321 50  0000 C CNN
+F 1 "TPD4E001-Q1" H 8750 5230 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 8550 4000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tpd4e001-q1.pdf" H 8750 4600 50  0001 C CNN
+F 4 "296-39344-1-ND" H 8750 5139 50  0000 C CNN "DIGIKEY"
+	1    8750 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5C916728
+P 8750 5450
+F 0 "#PWR016" H 8750 5200 50  0001 C CNN
+F 1 "GND" H 8755 5277 50  0000 C CNN
+F 2 "" H 8750 5450 50  0001 C CNN
+F 3 "" H 8750 5450 50  0001 C CNN
+	1    8750 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 5100 8750 5150
+Wire Wire Line
+	8750 4000 8750 4150
+NoConn ~ 9250 4500
+NoConn ~ 9250 4700
+Wire Wire Line
+	9500 4750 9500 5150
+Wire Wire Line
+	9500 5150 8750 5150
+Connection ~ 8750 5150
+Wire Wire Line
+	8750 5150 8750 5450
+Wire Wire Line
+	9500 4450 9500 4150
+Wire Wire Line
+	9500 4150 8750 4150
+Connection ~ 8750 4150
+Wire Wire Line
+	6900 5700 7950 5700
+Wire Wire Line
+	8250 4700 7950 4700
+Wire Wire Line
+	8250 4500 8050 4500
+Wire Wire Line
+	6900 5800 8050 5800
+Wire Wire Line
+	7950 4700 7950 5700
+Connection ~ 7950 5700
+Wire Wire Line
+	7950 5700 9650 5700
+Wire Wire Line
+	8050 4500 8050 5800
+Connection ~ 8050 5800
+Wire Wire Line
+	8050 5800 9650 5800
+Text HLabel 5550 6400 0    50   Output ~ 0
+PE7
+Wire Wire Line
+	5700 6400 5550 6400
+Wire Wire Line
+	750  4800 950  4800
+Wire Wire Line
+	750  5100 2050 5100
+Wire Wire Line
+	750  4900 1050 4900
+Wire Wire Line
+	750  5000 2150 5000
+Wire Wire Line
+	750  5500 3350 5500
+Wire Wire Line
+	750  5300 4350 5300
+Wire Wire Line
+	750  5400 3250 5400
+Wire Wire Line
+	950  6650 950  4800
+Connection ~ 950  4800
+Wire Wire Line
+	950  4800 5700 4800
+Wire Wire Line
+	1050 6450 1050 4900
+Connection ~ 1050 4900
+Wire Wire Line
+	1050 4900 5700 4900
+Wire Wire Line
+	2150 6650 2150 5000
+Connection ~ 2150 5000
+Wire Wire Line
+	2150 5000 5700 5000
+Wire Wire Line
+	2050 6450 2050 5100
+Connection ~ 2050 5100
+Wire Wire Line
+	2050 5100 5700 5100
+Wire Wire Line
+	750  5200 4450 5200
+Wire Wire Line
+	4450 6650 4450 5200
+Connection ~ 4450 5200
+Wire Wire Line
+	4450 5200 5700 5200
+Wire Wire Line
+	4350 6450 4350 5300
+Connection ~ 4350 5300
+Wire Wire Line
+	4350 5300 5700 5300
+Wire Wire Line
+	3250 6650 3250 5400
+Connection ~ 3250 5400
+Wire Wire Line
+	3250 5400 5700 5400
+Wire Wire Line
+	3350 6450 3350 5500
+Connection ~ 3350 5500
+Wire Wire Line
+	3350 5500 5700 5500
 $EndSCHEMATC

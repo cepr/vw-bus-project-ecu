@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:speeduino_mini-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 18 18
+Sheet 18 21
 Title ""
 Date ""
 Rev ""
@@ -123,7 +123,7 @@ F 2 "Housings_SSOP:VSSOP-8_2.3x2mm_Pitch0.5mm" H 4200 5550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf" H 4200 5450 50  0001 C CNN
 F 4 "296-17014-1-ND" H 4200 6473 50  0000 C CNN "DIGIKEY"
 	1    4200 6150
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	6350 3150 4600 3150
@@ -203,19 +203,6 @@ Connection ~ 3700 3550
 Wire Wire Line
 	3700 3550 3700 3650
 Wire Wire Line
-	4600 6300 4600 6700
-Wire Wire Line
-	4600 6700 3550 6700
-Wire Wire Line
-	3550 6700 3550 6100
-Connection ~ 3550 6100
-Wire Wire Line
-	4600 3250 4700 3250
-Wire Wire Line
-	4700 3250 4700 3650
-Wire Wire Line
-	4700 3650 6350 3650
-Wire Wire Line
 	7250 2750 7250 2200
 Wire Wire Line
 	7250 2200 4800 2200
@@ -270,14 +257,8 @@ Wire Wire Line
 	3550 4250 3550 3050
 Text HLabel 2550 3250 0    50   Output ~ 0
 SCK
-Wire Wire Line
-	4600 6100 6100 6100
-Wire Wire Line
-	6100 6100 6100 4450
-Wire Wire Line
-	6100 4450 6350 4450
 Text Notes 6900 1850 0    50   ~ 0
-ATMEGA2561 ICSP Programming:\nGPIO14 - PDI\nGPIO15 - PDO\nGPIO18 - SCK\nGPIO23 - RST\nGPIO24 - VCC
+ATMEGA2561 ICSP Programming:\nGPIO14 - PDI\nGPIO15 - PDO\nGPIO13 - SCK\nGPIO23 - RST\nGPIO6 - VCC
 Wire Wire Line
 	5000 4350 6350 4350
 Wire Wire Line
@@ -301,13 +282,12 @@ NoConn ~ 6350 4050
 NoConn ~ 6350 4250
 NoConn ~ 6350 4650
 NoConn ~ 6350 4750
-NoConn ~ 7950 4850
 NoConn ~ 7950 4750
 NoConn ~ 7950 4550
 NoConn ~ 7950 4450
 NoConn ~ 7950 4350
 NoConn ~ 7950 4150
-NoConn ~ 7950 3950
+NoConn ~ 6350 4450
 NoConn ~ 7950 3850
 NoConn ~ 7950 3750
 NoConn ~ 7950 3550
@@ -346,8 +326,6 @@ F 4 "311-150CRCT-ND" V 2935 4350 50  0000 C CNN "DIGIKEY"
 	1    3050 4350
 	0    1    1    0   
 $EndComp
-Text Notes 1750 1700 0    50   ~ 0
-Note: In order to program the ATMEGA2561 using the Raspberry PI, the Raspberry PI has to be self-powered.\nThis will also back-power all the sensors.\nMake sure to use a 2A power supply.
 Connection ~ 4800 4250
 Wire Wire Line
 	4800 4250 4800 3900
@@ -366,4 +344,37 @@ Wire Wire Line
 	4600 4550 4600 4450
 Connection ~ 4600 4550
 NoConn ~ 6350 4550
+Wire Wire Line
+	8250 6100 8250 3950
+Wire Wire Line
+	8250 3950 7950 3950
+Wire Wire Line
+	4600 6100 8250 6100
+NoConn ~ 7950 4250
+NoConn ~ 6350 3650
+Wire Wire Line
+	7950 4850 8100 4850
+Wire Wire Line
+	8100 4850 8100 5900
+Wire Wire Line
+	8100 5900 5500 5900
+Wire Wire Line
+	5500 5900 5500 3250
+Wire Wire Line
+	4600 3250 5500 3250
+$Comp
+L power:GND #PWR0101
+U 1 1 5C8E8176
+P 4700 6400
+F 0 "#PWR0101" H 4700 6150 50  0001 C CNN
+F 1 "GND" H 4705 6227 50  0000 C CNN
+F 2 "" H 4700 6400 50  0001 C CNN
+F 3 "" H 4700 6400 50  0001 C CNN
+	1    4700 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 6300 4700 6300
+Wire Wire Line
+	4700 6300 4700 6400
 $EndSCHEMATC

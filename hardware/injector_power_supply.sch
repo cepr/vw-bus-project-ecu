@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:speeduino_mini-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 18
+Sheet 11 21
 Title ""
 Date ""
 Rev ""
@@ -427,14 +427,38 @@ $EndComp
 $Comp
 L power:+12V #PWR053
 U 1 1 5C6B949D
-P 1050 2700
-F 0 "#PWR053" H 1050 2550 50  0001 C CNN
-F 1 "+12V" H 1065 2873 50  0000 C CNN
-F 2 "" H 1050 2700 50  0001 C CNN
-F 3 "" H 1050 2700 50  0001 C CNN
-	1    1050 2700
+P 1050 1750
+F 0 "#PWR053" H 1050 1600 50  0001 C CNN
+F 1 "+12V" H 1065 1923 50  0000 C CNN
+F 2 "" H 1050 1750 50  0001 C CNN
+F 3 "" H 1050 1750 50  0001 C CNN
+	1    1050 1750
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:D_Schottky_AAK D?
+U 1 1 5C9E72FF
+P 1050 2300
+AR Path="/5C610827/5C9E72FF" Ref="D?"  Part="1" 
+AR Path="/5C95BECF/5C9E72FF" Ref="D?"  Part="1" 
+AR Path="/5C679A94/5C9E72FF" Ref="D8"  Part="1" 
+F 0 "D8" V 1141 2221 50  0000 R CNN
+F 1 "ACGRKM4007-HF" V 1050 2221 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:TO-277A" H 1050 2125 50  0001 C CNN
+F 3 "http://www.comchiptech.com/admin/files/product/ACGRKM4001-HF%20Thru.%20ACGRKM4007-HF%20RevC.pdf" H 1050 2300 50  0001 C CNN
+F 4 "641-1634-1-ND" V 959 2221 50  0000 R CNN "DIGIKEY"
+	1    1050 2300
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	1050 2700 1050 2850
+	1050 2450 1050 2850
+Wire Wire Line
+	1050 2100 1050 2000
+Wire Wire Line
+	950  2100 950  2000
+Wire Wire Line
+	950  2000 1050 2000
+Connection ~ 1050 2000
+Wire Wire Line
+	1050 2000 1050 1750
 $EndSCHEMATC
