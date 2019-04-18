@@ -126,7 +126,7 @@ F 4 "296-17014-1-ND" H 4200 6473 50  0000 C CNN "DIGIKEY"
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6350 3150 4600 3150
+	6350 3150 6150 3150
 Wire Wire Line
 	4800 3050 4600 3050
 Wire Wire Line
@@ -191,8 +191,6 @@ Wire Wire Line
 	3550 6100 3550 6000
 Wire Wire Line
 	7050 2550 7050 2650
-Wire Wire Line
-	6000 3250 6000 6200
 Wire Wire Line
 	6000 6200 4600 6200
 Wire Wire Line
@@ -260,8 +258,6 @@ SCK
 Text Notes 6900 1850 0    50   ~ 0
 ATMEGA2561 ICSP Programming:\nGPIO14 - PDI\nGPIO15 - PDO\nGPIO13 - SCK\nGPIO23 - RST\nGPIO6 - VCC
 Wire Wire Line
-	5000 4350 6350 4350
-Wire Wire Line
 	5000 3900 4800 3900
 Connection ~ 4800 3900
 Wire Wire Line
@@ -275,25 +271,20 @@ Wire Wire Line
 Wire Wire Line
 	2900 4350 2550 4350
 NoConn ~ 6350 3450
-NoConn ~ 6350 3550
-NoConn ~ 6350 3850
 NoConn ~ 6350 3950
 NoConn ~ 6350 4050
-NoConn ~ 6350 4250
 NoConn ~ 6350 4650
 NoConn ~ 6350 4750
 NoConn ~ 7950 4750
 NoConn ~ 7950 4550
-NoConn ~ 7950 4450
 NoConn ~ 7950 4350
 NoConn ~ 7950 4150
-NoConn ~ 6350 4450
+NoConn ~ 6350 3650
 NoConn ~ 7950 3850
 NoConn ~ 7950 3750
 NoConn ~ 7950 3550
 NoConn ~ 7950 3450
 NoConn ~ 7950 3250
-NoConn ~ 7950 3150
 $Comp
 L Device:R R?
 U 1 1 5C838946
@@ -333,7 +324,6 @@ Wire Wire Line
 	4800 4250 4800 6000
 Wire Wire Line
 	4600 4350 5000 4350
-Connection ~ 5000 4350
 NoConn ~ 3800 4450
 Wire Wire Line
 	3550 4250 3550 6000
@@ -345,23 +335,8 @@ Wire Wire Line
 Connection ~ 4600 4550
 NoConn ~ 6350 4550
 Wire Wire Line
-	8250 6100 8250 3950
-Wire Wire Line
-	8250 3950 7950 3950
-Wire Wire Line
-	4600 6100 8250 6100
+	4600 6100 6150 6100
 NoConn ~ 7950 4250
-NoConn ~ 6350 3650
-Wire Wire Line
-	7950 4850 8100 4850
-Wire Wire Line
-	8100 4850 8100 5900
-Wire Wire Line
-	8100 5900 5500 5900
-Wire Wire Line
-	5500 5900 5500 3250
-Wire Wire Line
-	4600 3250 5500 3250
 $Comp
 L power:GND #PWR0101
 U 1 1 5C8E8176
@@ -377,4 +352,90 @@ Wire Wire Line
 	4600 6300 4700 6300
 Wire Wire Line
 	4700 6300 4700 6400
+Wire Wire Line
+	5000 4350 5500 4350
+Wire Wire Line
+	5500 4350 5500 5750
+Wire Wire Line
+	5500 5750 8100 5750
+Connection ~ 5000 4350
+Wire Wire Line
+	5850 3250 5850 4350
+Wire Wire Line
+	5850 4350 6350 4350
+Wire Wire Line
+	4600 3250 5850 3250
+Wire Wire Line
+	8100 3950 7950 3950
+Wire Wire Line
+	8100 3950 8100 5750
+Wire Wire Line
+	7350 2200 9000 2200
+Wire Wire Line
+	9000 2200 9000 4850
+Connection ~ 7350 2200
+Text Notes 8200 2050 0    50   ~ 0
+Line to be removed\nTemporary there to fix a mistake in rev 1.1
+$Comp
+L power:GND #PWR0106
+U 1 1 5CAFC06D
+P 8400 3200
+F 0 "#PWR0106" H 8400 2950 50  0001 C CNN
+F 1 "GND" H 8405 3027 50  0000 C CNN
+F 2 "" H 8400 3200 50  0001 C CNN
+F 3 "" H 8400 3200 50  0001 C CNN
+	1    8400 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3150 8400 3150
+Wire Wire Line
+	8400 3150 8400 3200
+Wire Notes Line
+	8200 2100 8200 2300
+Wire Notes Line
+	8150 3050 8150 3250
+Wire Wire Line
+	6000 3250 6000 5900
+Wire Wire Line
+	9000 4850 7950 4850
+Wire Wire Line
+	7950 4450 8300 4450
+Wire Wire Line
+	8300 4450 8300 5900
+Wire Wire Line
+	8300 5900 6000 5900
+Connection ~ 6000 5900
+Wire Wire Line
+	6000 5900 6000 6200
+Wire Notes Line
+	6400 5800 6400 6000
+Wire Wire Line
+	6350 4450 6150 4450
+Wire Wire Line
+	6150 4450 6150 6100
+Wire Wire Line
+	6350 4250 6150 4250
+Wire Wire Line
+	6150 4250 6150 3150
+Connection ~ 6150 3150
+Wire Wire Line
+	6150 3150 4600 3150
+Wire Notes Line
+	6050 3900 6200 3900
+$Comp
+L power:GND #PWR0107
+U 1 1 5CB2CFEC
+P 5650 3550
+F 0 "#PWR0107" H 5650 3300 50  0001 C CNN
+F 1 "GND" H 5655 3377 50  0000 C CNN
+F 2 "" H 5650 3550 50  0001 C CNN
+F 3 "" H 5650 3550 50  0001 C CNN
+	1    5650 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3550 6350 3550
+Wire Notes Line
+	5800 3500 5800 3650
 $EndSCHEMATC
