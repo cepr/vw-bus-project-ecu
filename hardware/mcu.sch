@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 20 23
+Sheet 19 22
 Title ""
 Date ""
 Rev ""
@@ -504,20 +504,16 @@ F5 "+12V" I R 10550 6700 50
 F6 "+5V" I R 10550 6300 50 
 $EndSheet
 $Sheet
-S 5050 1300 750  350 
+S 4450 1300 750  350 
 U 5D1A080F
 F0 "ATMEGA regulator" 50
 F1 "atmega_regulator.sch" 50
-F2 "+12V" I L 5050 1400 50 
-F3 "VCC" O R 5800 1550 50 
-F4 "AVCC" O R 5800 1400 50 
+F2 "+12V" I L 4450 1400 50 
+F3 "VCC" O R 5200 1550 50 
+F4 "AVCC" O R 5200 1400 50 
 $EndSheet
 Wire Wire Line
-	5800 1550 6300 1550
-Wire Wire Line
 	6300 1550 6300 2700
-Wire Wire Line
-	5800 1400 6400 1400
 Wire Wire Line
 	6400 1400 6400 2700
 Text Label 5950 1550 0    50   ~ 0
@@ -530,11 +526,9 @@ Wire Wire Line
 	10550 6300 10850 6300
 Text Label 11850 6300 2    50   ~ 0
 VCC
-Text HLabel 4550 1400 0    50   Input ~ 0
+Text HLabel 3350 1400 0    50   Input ~ 0
 +12V
-Wire Wire Line
-	4550 1400 5050 1400
-Text Label 4700 1400 0    50   ~ 0
+Text Label 3500 1400 0    50   ~ 0
 +12V
 Text Label 11850 6700 2    50   ~ 0
 +12V
@@ -620,4 +614,15 @@ F 3 "~" H 11150 6700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11450 6700 11850 6700
+Wire Wire Line
+	5200 1550 6300 1550
+Wire Wire Line
+	5200 1400 6400 1400
+Wire Wire Line
+	3350 1400 4450 1400
+Text HLabel 6650 1550 2    50   Output ~ 0
+VCC
+Wire Wire Line
+	6300 1550 6650 1550
+Connection ~ 6300 1550
 $EndSCHEMATC
