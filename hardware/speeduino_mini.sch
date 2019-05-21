@@ -267,8 +267,6 @@ Wire Wire Line
 	1850 1650 2200 1650
 Wire Wire Line
 	4750 1250 4500 1250
-Wire Wire Line
-	4500 1650 4750 1650
 $Comp
 L power:GND #PWR030
 U 1 1 5C757B3C
@@ -611,21 +609,8 @@ F 3 "~" H 4200 1250 50  0001 C CNN
 	1    4200 1250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper JP15
-U 1 1 5D015095
-P 4200 1650
-F 0 "JP15" H 4200 1914 50  0000 C CNN
-F 1 "Jumper" H 4200 1823 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4200 1650 50  0001 C CNN
-F 3 "~" H 4200 1650 50  0001 C CNN
-	1    4200 1650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3900 1250 3750 1250
-Wire Wire Line
-	3900 1650 3750 1650
 $Comp
 L Device:Jumper JP13
 U 1 1 5D01DED2
@@ -763,136 +748,34 @@ F 3 "" H 9350 4450 50  0001 C CNN
 	1    9350 4450
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:Jumper JP16
-U 1 1 5D0A143E
-P 4200 2200
-F 0 "JP16" H 4200 2464 50  0000 C CNN
-F 1 "Jumper" H 4200 2373 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4200 2200 50  0001 C CNN
-F 3 "~" H 4200 2200 50  0001 C CNN
-	1    4200 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP17
-U 1 1 5D0A7168
-P 4200 3050
-F 0 "JP17" H 4200 3314 50  0000 C CNN
-F 1 "Jumper" H 4200 3223 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4200 3050 50  0001 C CNN
-F 3 "~" H 4200 3050 50  0001 C CNN
-	1    4200 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP18
-U 1 1 5D0A75A4
-P 4200 3900
-F 0 "JP18" H 4200 4164 50  0000 C CNN
-F 1 "Jumper" H 4200 4073 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4200 3900 50  0001 C CNN
-F 3 "~" H 4200 3900 50  0001 C CNN
-	1    4200 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP20
-U 1 1 5D0A7EBF
-P 4200 5050
-F 0 "JP20" H 4200 5314 50  0000 C CNN
-F 1 "Jumper" H 4200 5223 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4200 5050 50  0001 C CNN
-F 3 "~" H 4200 5050 50  0001 C CNN
-	1    4200 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP21
-U 1 1 5D0A8F12
-P 4200 5850
-F 0 "JP21" H 4200 6114 50  0000 C CNN
-F 1 "Jumper" H 4200 6023 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4200 5850 50  0001 C CNN
-F 3 "~" H 4200 5850 50  0001 C CNN
-	1    4200 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP22
-U 1 1 5D0A9330
-P 4200 6700
-F 0 "JP22" H 4200 6964 50  0000 C CNN
-F 1 "Jumper" H 4200 6873 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4200 6700 50  0001 C CNN
-F 3 "~" H 4200 6700 50  0001 C CNN
-	1    4200 6700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP23
-U 1 1 5D0A97F4
-P 4200 7550
-F 0 "JP23" H 4200 7814 50  0000 C CNN
-F 1 "Jumper" H 4200 7723 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4200 7550 50  0001 C CNN
-F 3 "~" H 4200 7550 50  0001 C CNN
-	1    4200 7550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 2200 4750 2200
-Wire Wire Line
-	4500 3050 4750 3050
-Wire Wire Line
-	4500 5050 4750 5050
-Wire Wire Line
-	4500 5850 4750 5850
-Wire Wire Line
-	4500 6700 4750 6700
-Wire Wire Line
-	4500 7550 4750 7550
-Wire Wire Line
-	3900 7550 3750 7550
-Wire Wire Line
-	3750 6700 3900 6700
-Wire Wire Line
-	3900 5850 3750 5850
-Wire Wire Line
-	3750 5050 3900 5050
-Wire Wire Line
-	3900 3050 3750 3050
-Wire Wire Line
-	3900 2200 3750 2200
 $Sheet
 S 4750 1150 1750 6800
 U 5C610827
 F0 "MCU" 50
 F1 "mcu.sch" 50
-F2 "A3" I L 4750 4600 50 
-F3 "A2" I L 4750 3900 50 
-F4 "A0" I L 4750 5050 50 
-F5 "A1" I L 4750 7550 50 
-F6 "A4" I L 4750 2200 50 
+F2 "A3" I L 4750 3050 50 
+F3 "A2" I L 4750 4600 50 
+F4 "A0" I L 4750 2200 50 
+F5 "A1" I L 4750 3900 50 
+F6 "A4" I L 4750 6700 50 
 F7 "TXD0" O R 6500 4050 50 
 F8 "RXD0" I R 6500 4450 50 
-F9 "A5" I L 4750 3050 50 
-F10 "A6" I L 4750 6700 50 
-F11 "A7" I L 4750 1650 50 
-F12 "INT1" I L 4750 5850 50 
-F13 "INT0" I L 4750 5750 50 
-F14 "OC1B" O R 6500 1300 50 
-F15 "OC1A" O R 6500 2100 50 
-F16 "OC3C" O R 6500 3250 50 
-F17 "OC3B" O R 6500 2900 50 
-F18 "OC3A" O R 6500 3600 50 
-F19 "PA0" O L 4750 1250 50 
-F20 "SCK" I R 6500 4850 50 
-F21 "RESET" I R 6500 5250 50 
-F22 "PB7" O R 6500 6250 50 
-F23 "+12V" I R 6500 7850 50 
-F24 "LIN" B R 6500 5750 50 
-F25 "VCC" O R 6500 5550 50 
+F9 "A5" I L 4750 7550 50 
+F10 "A6" I L 4750 1650 50 
+F11 "A7" I L 4750 5050 50 
+F12 "INT0" I L 4750 5850 50 
+F13 "OC1B" O R 6500 1300 50 
+F14 "OC1A" O R 6500 2100 50 
+F15 "OC3C" O R 6500 3250 50 
+F16 "OC3B" O R 6500 2900 50 
+F17 "OC3A" O R 6500 3600 50 
+F18 "PA0" O L 4750 1250 50 
+F19 "SCK" I R 6500 4850 50 
+F20 "RESET" I R 6500 5250 50 
+F21 "+12V" I R 6500 6750 50 
+F22 "LIN" B R 6500 5750 50 
+F23 "VCC" O R 6500 5550 50 
+F24 "PA1" O R 6500 6250 50 
 $EndSheet
 $Comp
 L power:+12V #PWR04
@@ -965,36 +848,10 @@ Wire Wire Line
 	9450 6250 9950 6250
 Wire Wire Line
 	9450 6650 10200 6650
-$Comp
-L Device:Jumper JP35
-U 1 1 5D2AA0A6
-P 2300 7250
-F 0 "JP35" H 2300 7514 50  0000 C CNN
-F 1 "Jumper" H 2300 7423 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2300 7250 50  0001 C CNN
-F 3 "~" H 2300 7250 50  0001 C CNN
-	1    2300 7250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 7250 1850 7250
 Wire Wire Line
 	1850 7250 1850 7450
 Wire Wire Line
 	1850 7450 1550 7450
-$Comp
-L Device:Jumper JP34
-U 1 1 5D2C4E9A
-P 2300 6450
-F 0 "JP34" H 2300 6714 50  0000 C CNN
-F 1 "Jumper" H 2300 6623 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2300 6450 50  0001 C CNN
-F 3 "~" H 2300 6450 50  0001 C CNN
-	1    2300 6450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 6450 1850 6450
 Wire Wire Line
 	1850 6450 1850 6600
 Wire Wire Line
@@ -1011,19 +868,6 @@ F 4 "ED1610-ND" H 1430 5755 50  0000 L CNN "DIGIKEY"
 	1    1350 5850
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper JP33
-U 1 1 5D2E00C7
-P 2250 5600
-F 0 "JP33" H 2250 5864 50  0000 C CNN
-F 1 "Jumper" H 2250 5773 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2250 5600 50  0001 C CNN
-F 3 "~" H 2250 5600 50  0001 C CNN
-	1    2250 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1950 5600 1800 5600
 Wire Wire Line
 	1800 5600 1800 5750
 Wire Wire Line
@@ -1038,23 +882,6 @@ F 2 "" H 1400 5050 50  0001 C CNN
 F 3 "" H 1400 5050 50  0001 C CNN
 	1    1400 5050
 	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2000 5050 2200 5050
-Wire Wire Line
-	3900 4600 3750 4600
-Wire Wire Line
-	4500 4600 4750 4600
-$Comp
-L Device:Jumper JP19
-U 1 1 5D0A7A81
-P 4200 4600
-F 0 "JP19" H 4200 4864 50  0000 C CNN
-F 1 "Jumper" H 4200 4773 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4200 4600 50  0001 C CNN
-F 3 "~" H 4200 4600 50  0001 C CNN
-	1    4200 4600
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1450 4600 2200 4600
@@ -1094,55 +921,8 @@ F2 "IN" I L 2200 4600 50
 F3 "OUT" O R 3750 4600 50 
 F4 "VCC" I L 2200 4400 50 
 $EndSheet
-$Comp
-L Device:Jumper JP36
-U 1 1 5D360AC3
-P 1950 2700
-F 0 "JP36" H 1950 2964 50  0000 C CNN
-F 1 "Jumper" H 1950 2873 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1950 2700 50  0001 C CNN
-F 3 "~" H 1950 2700 50  0001 C CNN
-	1    1950 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1650 2700 1500 2700
 Wire Wire Line
 	1500 2700 1500 2950
-$Comp
-L Device:Jumper JP38
-U 1 1 5D37A31D
-P 1750 4400
-F 0 "JP38" H 1750 4664 50  0000 C CNN
-F 1 "Jumper" H 1750 4573 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1750 4400 50  0001 C CNN
-F 3 "~" H 1750 4400 50  0001 C CNN
-	1    1750 4400
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1450 4400 1200 4400
-Wire Wire Line
-	2050 4400 2200 4400
-$Comp
-L Device:Jumper JP37
-U 1 1 5D38C81A
-P 1800 3600
-F 0 "JP37" H 1800 3864 50  0000 C CNN
-F 1 "Jumper" H 1800 3773 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1800 3600 50  0001 C CNN
-F 3 "~" H 1800 3600 50  0001 C CNN
-	1    1800 3600
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1500 3600 1250 3600
-Wire Wire Line
-	4500 3900 4750 3900
-Wire Wire Line
-	3900 3900 3800 3900
-Wire Wire Line
-	2200 3600 2100 3600
 Wire Wire Line
 	6500 5750 9350 5750
 Wire Wire Line
@@ -1207,12 +987,12 @@ $EndComp
 $Comp
 L power:+5VA #PWR0130
 U 1 1 5D4C552F
-P 2250 2700
-F 0 "#PWR0130" H 2250 2550 50  0001 C CNN
-F 1 "+5VA" H 2265 2873 50  0000 C CNN
-F 2 "" H 2250 2700 50  0001 C CNN
-F 3 "" H 2250 2700 50  0001 C CNN
-	1    2250 2700
+P 1500 2700
+F 0 "#PWR0130" H 1500 2550 50  0001 C CNN
+F 1 "+5VA" H 1515 2873 50  0000 C CNN
+F 2 "" H 1500 2700 50  0001 C CNN
+F 3 "" H 1500 2700 50  0001 C CNN
+	1    1500 2700
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1237,18 +1017,6 @@ F 3 "" H 1200 4400 50  0001 C CNN
 	1    1200 4400
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper JP48
-U 1 1 5CE6BED5
-P 1700 5050
-F 0 "JP48" H 1700 5314 50  0000 C CNN
-F 1 "Jumper" H 1700 5223 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1700 5050 50  0001 C CNN
-F 3 "~" H 1700 5050 50  0001 C CNN
-	1    1700 5050
-	-1   0    0    -1  
-$EndComp
-NoConn ~ 4750 5750
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5CF25801
@@ -1306,4 +1074,49 @@ F 3 "" H 6650 5550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6500 5550 6650 5550
+Wire Wire Line
+	3750 2200 4750 2200
+Wire Wire Line
+	3800 3900 4750 3900
+Wire Wire Line
+	3750 4600 4750 4600
+Wire Wire Line
+	3750 5050 4750 5050
+Wire Wire Line
+	3750 5850 4750 5850
+Wire Wire Line
+	3750 6700 4750 6700
+Wire Wire Line
+	3750 7550 4750 7550
+Wire Wire Line
+	3750 1650 4750 1650
+Wire Wire Line
+	3750 3050 4750 3050
+Wire Wire Line
+	1850 7250 2600 7250
+Wire Wire Line
+	1800 5600 2550 5600
+Wire Wire Line
+	1850 6450 2600 6450
+Wire Wire Line
+	1200 4400 2200 4400
+Wire Wire Line
+	1400 5050 2200 5050
+Wire Wire Line
+	1250 3600 2200 3600
+$Comp
+L power:+12V #PWR0134
+U 1 1 5CE8C18A
+P 6700 6650
+F 0 "#PWR0134" H 6700 6500 50  0001 C CNN
+F 1 "+12V" H 6715 6823 50  0000 C CNN
+F 2 "" H 6700 6650 50  0001 C CNN
+F 3 "" H 6700 6650 50  0001 C CNN
+	1    6700 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 6650 6700 6750
+Wire Wire Line
+	6700 6750 6500 6750
 $EndSCHEMATC

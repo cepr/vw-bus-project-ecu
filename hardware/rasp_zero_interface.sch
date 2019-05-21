@@ -46,29 +46,15 @@ Wire Wire Line
 Wire Wire Line
 	6200 5250 6200 5350
 Wire Wire Line
-	6200 5350 6300 5350
-Wire Wire Line
 	6550 5350 6550 5450
-Wire Wire Line
-	6550 5350 6600 5350
-Wire Wire Line
-	6900 5350 6900 5250
 Connection ~ 6550 5350
 Wire Wire Line
 	6800 5250 6800 5350
-Connection ~ 6800 5350
-Wire Wire Line
-	6800 5350 6900 5350
 Wire Wire Line
 	6700 5250 6700 5350
 Connection ~ 6700 5350
 Wire Wire Line
 	6700 5350 6800 5350
-Wire Wire Line
-	6600 5250 6600 5350
-Connection ~ 6600 5350
-Wire Wire Line
-	6600 5350 6700 5350
 Wire Wire Line
 	6500 5250 6500 5350
 Connection ~ 6500 5350
@@ -79,11 +65,6 @@ Wire Wire Line
 Connection ~ 6400 5350
 Wire Wire Line
 	6400 5350 6500 5350
-Wire Wire Line
-	6300 5250 6300 5350
-Connection ~ 6300 5350
-Wire Wire Line
-	6300 5350 6400 5350
 Text HLabel 2000 4250 0    50   Output ~ 0
 ATMEGA_RESET
 Text HLabel 2000 3050 0    50   Output ~ 0
@@ -9886,4 +9867,11 @@ Wire Wire Line
 	7400 4650 8300 4650
 Wire Wire Line
 	8300 4650 8300 4950
+Wire Wire Line
+	6200 5350 6400 5350
+NoConn ~ 6300 5250
+Wire Wire Line
+	6550 5350 6700 5350
+NoConn ~ 6600 5250
+NoConn ~ 6900 5250
 $EndSCHEMATC
