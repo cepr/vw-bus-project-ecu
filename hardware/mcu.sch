@@ -22,7 +22,7 @@ F 0 "U3" H 6300 2400 50  0000 C CNN
 F 1 "ATmega2561-16AU" H 6300 2300 50  0000 C CNN
 F 2 "Housings_QFP:TQFP-64_14x14mm_Pitch0.8mm" H 6300 4700 50  0001 C CIN
 F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en589901" H 6300 4700 50  0001 C CNN
-F 4 "ATMEGA2561-16AURCT-ND" H 6300 2200 50  0000 C CNN "DIGIKEY"
+F 4 "ATMEGA2561-16AURCT-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    6300 4700
 	1    0    0    -1  
 $EndComp
@@ -52,7 +52,7 @@ F 0 "Y1" V 4309 3431 50  0000 L CNN
 F 1 "CSTCE16M0V53-R0" V 4400 3431 50  0000 L CNN
 F 2 "Speeduino Mini:Resonator_SMD_Murata-3pin_3.2x1.3mm" H 4400 3300 50  0001 C CNN
 F 3 "https://www.murata.com/en/products/productdata/8801162231838/SPEC-CSTNE16M0V530000R0.pdf" H 4400 3300 50  0001 C CNN
-F 4 "490-17948-1-ND" V 4491 3431 50  0000 L CNN "DIGIKEY"
+F 4 "490-17948-1-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    4400 3300
 	0    1    1    0   
 $EndComp
@@ -80,7 +80,7 @@ F 0 "R1" H 3270 3391 50  0000 L CNN
 F 1 "1M" H 3270 3300 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 3130 3300 50  0001 C CNN
 F 3 "~" H 3200 3300 50  0001 C CNN
-F 4 "311-1.00MCRCT-ND" H 3270 3209 50  0000 L CNN "DIGIKEY"
+F 4 "311-1.00MCRCT-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    3200 3300
 	1    0    0    -1  
 $EndComp
@@ -110,10 +110,10 @@ L Device:C C2
 U 1 1 5C7332C2
 P 4600 2500
 F 0 "C2" H 4715 2591 50  0000 L CNN
-F 1 "4.7nF" H 4715 2500 50  0000 L CNN
+F 1 "4.7nF 100V" H 4715 2500 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4638 2350 50  0001 C CNN
 F 3 "~" H 4600 2500 50  0001 C CNN
-F 4 "478-9887-1-ND" H 4715 2409 50  0000 L CNN "DIGIKEY"
+F 4 "478-9887-1-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    4600 2500
 	1    0    0    -1  
 $EndComp
@@ -142,7 +142,7 @@ F 0 "D1" V 4509 2279 50  0000 L CNN
 F 1 "MSS1P3L-M3/89A" V 4600 2279 50  0000 L CNN
 F 2 "Speeduino Mini:MicroSMP" H 4600 2200 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/89020/mss1p3l.pdf" H 4600 2200 50  0001 C CNN
-F 4 "MSS1P3L-M3/89AGICT-ND" V 4691 2279 50  0000 L CNN "DIGIKEY"
+F 4 "MSS1P3L-M3/89AGICT-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    4600 2200
 	0    1    1    0   
 $EndComp
@@ -155,7 +155,7 @@ F 0 "RN5A1" H 3670 2291 50  0000 L CNN
 F 1 "10k" H 3670 2200 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 3530 2200 50  0001 C CNN
 F 3 "~" H 3600 2200 50  0001 C CNN
-F 4 "311-10.0KCRCT-ND" H 3670 2109 50  0000 L CNN "DIGIKEY"
+F 4 "311-10.0KCRCT-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    3600 2200
 	1    0    0    -1  
 $EndComp
@@ -170,10 +170,10 @@ L Device:C C4
 U 1 1 5C7332EB
 P 4800 3800
 F 0 "C4" H 4915 3891 50  0000 L CNN
-F 1 "100nF" H 4915 3800 50  0000 L CNN
+F 1 "0.1uF 50V" H 4915 3800 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4838 3650 50  0001 C CNN
 F 3 "~" H 4800 3800 50  0001 C CNN
-F 4 "478-6048-1-ND" H 4915 3709 50  0000 L CNN "DIGIKEY"
+F 4 "478-6048-1-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    4800 3800
 	1    0    0    -1  
 $EndComp
@@ -250,14 +250,6 @@ Text Notes 8700 950  0    50   ~ 0
 EFUSE=0xFC (BODLEVEL=100 for 16MHz operation)\nHFUSE=0x99 (default)\nLFUSE=0xFF (for 16MHz operation, same as Arduino Mega)
 Text Notes 9100 1650 0    50   ~ 0
 ONLY 16 bits timers are 1,3,4,5
-NoConn ~ 6900 4800
-NoConn ~ 6900 4900
-NoConn ~ 6900 5000
-NoConn ~ 6900 5100
-NoConn ~ 6900 5200
-NoConn ~ 6900 5300
-NoConn ~ 6900 5400
-NoConn ~ 6900 5500
 NoConn ~ 6900 4300
 NoConn ~ 6900 4200
 NoConn ~ 6900 4100
@@ -319,6 +311,7 @@ F 0 "JP41" H 9300 6564 50  0000 C CNN
 F 1 "Jumper" H 9300 6473 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9300 6300 50  0001 C CNN
 F 3 "~" H 9300 6300 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    9300 6300
 	1    0    0    -1  
 $EndComp
@@ -332,6 +325,7 @@ F 0 "JP42" H 9300 6964 50  0000 C CNN
 F 1 "Jumper" H 9300 6873 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9300 6700 50  0001 C CNN
 F 3 "~" H 9300 6700 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    9300 6700
 	1    0    0    -1  
 $EndComp
@@ -361,6 +355,7 @@ F 0 "JP43" H 11150 6564 50  0000 C CNN
 F 1 "Jumper" H 11150 6473 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 11150 6300 50  0001 C CNN
 F 3 "~" H 11150 6300 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    11150 6300
 	1    0    0    -1  
 $EndComp
@@ -617,6 +612,7 @@ F 0 "JP51" H 3350 5164 50  0000 C CNN
 F 1 "Jumper" H 3350 5073 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3350 4900 50  0001 C CNN
 F 3 "~" H 3350 4900 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    3350 4900
 	1    0    0    -1  
 $EndComp
@@ -630,6 +626,7 @@ F 0 "JP49" H 2500 5264 50  0000 C CNN
 F 1 "Jumper" H 2500 5173 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2500 5000 50  0001 C CNN
 F 3 "~" H 2500 5000 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    2500 5000
 	1    0    0    -1  
 $EndComp
@@ -643,6 +640,7 @@ F 0 "JP39" H 1600 5364 50  0000 C CNN
 F 1 "Jumper" H 1600 5273 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1600 5100 50  0001 C CNN
 F 3 "~" H 1600 5100 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    1600 5100
 	1    0    0    -1  
 $EndComp
@@ -656,6 +654,7 @@ F 0 "JP40" H 1600 5464 50  0000 C CNN
 F 1 "Jumper" H 1600 5373 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1600 5200 50  0001 C CNN
 F 3 "~" H 1600 5200 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    1600 5200
 	1    0    0    1   
 $EndComp
@@ -669,6 +668,7 @@ F 0 "JP50" H 2500 5564 50  0000 C CNN
 F 1 "Jumper" H 2500 5473 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2500 5300 50  0001 C CNN
 F 3 "~" H 2500 5300 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    2500 5300
 	1    0    0    1   
 $EndComp
@@ -682,6 +682,7 @@ F 0 "JP52" H 3350 5664 50  0000 C CNN
 F 1 "Jumper" H 3350 5573 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3350 5400 50  0001 C CNN
 F 3 "~" H 3350 5400 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    3350 5400
 	1    0    0    1   
 $EndComp
@@ -707,6 +708,7 @@ F 0 "JP54" H 4200 5764 50  0000 C CNN
 F 1 "Jumper" H 4200 5673 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4200 5500 50  0001 C CNN
 F 3 "~" H 4200 5500 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    4200 5500
 	1    0    0    1   
 $EndComp
@@ -730,6 +732,7 @@ F 0 "JP53" H 4200 5064 50  0000 C CNN
 F 1 "Jumper" H 4200 4973 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4200 4800 50  0001 C CNN
 F 3 "~" H 4200 4800 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    4200 4800
 	1    0    0    -1  
 $EndComp
@@ -746,20 +749,21 @@ Wire Wire Line
 $Comp
 L Device:Jumper JP?
 U 1 1 5CFA790F
-P 7600 5700
+P 8400 5700
 AR Path="/5CFA790F" Ref="JP?"  Part="1" 
 AR Path="/5C610827/5CFA790F" Ref="JP55"  Part="1" 
-F 0 "JP55" H 7600 5964 50  0000 C CNN
-F 1 "Jumper" H 7600 5873 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7600 5700 50  0001 C CNN
-F 3 "~" H 7600 5700 50  0001 C CNN
-	1    7600 5700
+F 0 "JP55" H 8400 5964 50  0000 C CNN
+F 1 "Jumper" H 8400 5873 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8400 5700 50  0001 C CNN
+F 3 "~" H 8400 5700 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
+	1    8400 5700
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6900 5700 7300 5700
+	6900 5700 8100 5700
 Wire Wire Line
-	7900 5700 9600 5700
+	8700 5700 9600 5700
 Wire Wire Line
 	10550 6700 11850 6700
 Text HLabel 7100 3100 2    50   Output ~ 0
@@ -783,4 +787,31 @@ NoConn ~ 6900 6100
 NoConn ~ 6900 6200
 NoConn ~ 6900 6300
 NoConn ~ 6900 6400
+$Comp
+L Connector:Conn_01x08_Female J15
+U 1 1 5CEE8189
+P 7350 5100
+F 0 "J15" H 7378 5076 50  0000 L CNN
+F 1 "Conn_01x08_Female" H 7378 4985 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 7350 5100 50  0001 C CNN
+F 3 "~" H 7350 5100 50  0001 C CNN
+	1    7350 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 4800 7150 4800
+Wire Wire Line
+	7150 4900 6900 4900
+Wire Wire Line
+	6900 5000 7150 5000
+Wire Wire Line
+	7150 5100 6900 5100
+Wire Wire Line
+	6900 5200 7150 5200
+Wire Wire Line
+	7150 5300 6900 5300
+Wire Wire Line
+	6900 5400 7150 5400
+Wire Wire Line
+	7150 5500 6900 5500
 $EndSCHEMATC

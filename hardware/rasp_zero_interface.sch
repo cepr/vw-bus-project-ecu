@@ -33,6 +33,7 @@ F 0 "J2" H 7850 4250 50  0000 C CNN
 F 1 "Raspberry_Pi_2_3" H 7850 4150 50  0000 C CNN
 F 2 "Speeduino Mini:RaspberryPi_uHAT" H 6600 3950 50  0001 C CNN
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 6600 3950 50  0001 C CNN
+F 4 "S7123-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    6600 3950
 	1    0    0    -1  
 $EndComp
@@ -79,7 +80,7 @@ F 0 "U5" H 3650 3605 50  0000 C CNN
 F 1 "SN74LVC2T45MDCTTEP" H 3650 3514 50  0000 C CNN
 F 2 "Housings_SSOP:SSOP-8_2.95x2.8mm_Pitch0.65mm" H 3650 2500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc2t45-ep.pdf" H 3650 2400 50  0001 C CNN
-F 4 "296-23952-1-ND" H 3650 3423 50  0000 C CNN "DIGIKEY"
+F 4 "296-23952-1-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    3650 3100
 	1    0    0    -1  
 $EndComp
@@ -223,11 +224,11 @@ AR Path="/5C674DB1/5C838946" Ref="R?"  Part="1"
 AR Path="/5C679A94/5C838946" Ref="R?"  Part="1" 
 AR Path="/5C838946" Ref="R?"  Part="1" 
 AR Path="/5C6B9F28/5C838946" Ref="R24"  Part="1" 
-F 0 "R24" H 4380 3959 50  0000 R CNN
-F 1 "10k" H 4380 4050 50  0000 R CNN
+F 0 "R24" H 4382 3959 50  0000 R CNN
+F 1 "10k" H 4382 4050 50  0000 R CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 4380 4050 50  0001 C CNN
 F 3 "~" H 4450 4050 50  0001 C CNN
-F 4 "311-10.0KCRCT-ND" H 4380 4141 50  0000 R CNN "DIGIKEY"
+F 4 "311-10.0KCRCT-ND" H 4382 4141 50  0000 R CNN "DigiKey"
 	1    4450 4050
 	-1   0    0    1   
 $EndComp
@@ -238,11 +239,11 @@ P 2500 4250
 AR Path="/5C667F1A/5C83C8E7" Ref="R?"  Part="1" 
 AR Path="/5C668FC1/5C83C8E7" Ref="R?"  Part="1" 
 AR Path="/5C6B9F28/5C83C8E7" Ref="R23"  Part="1" 
-F 0 "R23" V 2203 4250 50  0000 C CNN
-F 1 "150" V 2294 4250 50  0000 C CNN
+F 0 "R23" V 2205 4250 50  0000 C CNN
+F 1 "150" V 2296 4250 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 2430 4250 50  0001 C CNN
 F 3 "~" H 2500 4250 50  0001 C CNN
-F 4 "311-150CRCT-ND" V 2385 4250 50  0000 C CNN "DIGIKEY"
+F 4 "311-150CRCT-ND" V 2387 4250 50  0000 C CNN "DigiKey"
 	1    2500 4250
 	0    1    1    0   
 $EndComp
@@ -9708,7 +9709,7 @@ F 0 "U9" H 3650 4805 50  0000 C CNN
 F 1 "SN74LVC2T45MDCTTEP" H 3650 4714 50  0000 C CNN
 F 2 "Housings_SSOP:SSOP-8_2.95x2.8mm_Pitch0.65mm" H 3650 3700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc2t45-ep.pdf" H 3650 3600 50  0001 C CNN
-F 4 "296-23952-1-ND" H 3650 4623 50  0000 C CNN "DIGIKEY"
+F 4 "296-23952-1-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    3650 4300
 	1    0    0    -1  
 $EndComp
@@ -9723,7 +9724,7 @@ F 0 "U10" H 3650 6555 50  0000 C CNN
 F 1 "SN74LVC2T45MDCTTEP" H 3650 6464 50  0000 C CNN
 F 2 "Housings_SSOP:SSOP-8_2.95x2.8mm_Pitch0.65mm" H 3650 5450 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc2t45-ep.pdf" H 3650 5350 50  0001 C CNN
-F 4 "296-23952-1-ND" H 3650 6373 50  0000 C CNN "DIGIKEY"
+F 4 "296-23952-1-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    3650 6050
 	-1   0    0    -1  
 $EndComp
@@ -9751,10 +9752,11 @@ AR Path="/5D461AF2" Ref="D?"  Part="1"
 AR Path="/5CF868AF/5D461AF2" Ref="D?"  Part="1" 
 AR Path="/5C95BECF/5D461AF2" Ref="D?"  Part="1" 
 AR Path="/5C6B9F28/5D461AF2" Ref="D2"  Part="1" 
-F 0 "D2" V 7839 5383 50  0000 R CNN
-F 1 "LED" V 7748 5383 50  0000 R CNN
+F 0 "D2" V 7884 5579 50  0000 L CNN
+F 1 "LED BLUE 10mA 3V" V 7793 5579 50  0000 L CNN
 F 2 "LEDs:LED_0805_HandSoldering" H 7800 5500 50  0001 C CNN
 F 3 "~" H 7800 5500 50  0001 C CNN
+F 4 "732-4982-1-ND" V 7702 5579 50  0000 L CNN "DigiKey"
 	1    7800 5500
 	0    -1   -1   0   
 $EndComp
@@ -9773,9 +9775,10 @@ AR Path="/5CF868AF/5D461AF8" Ref="R?"  Part="1"
 AR Path="/5C95BECF/5D461AF8" Ref="R?"  Part="1" 
 AR Path="/5C6B9F28/5D461AF8" Ref="R31"  Part="1" 
 F 0 "R31" H 7732 5054 50  0000 R CNN
-F 1 "R_US" H 7732 5145 50  0000 R CNN
+F 1 "200" H 7732 5145 50  0000 R CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 7840 5090 50  0001 C CNN
 F 3 "~" H 7800 5100 50  0001 C CNN
+F 4 "P200CCT-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    7800 5100
 	-1   0    0    1   
 $EndComp
@@ -9812,10 +9815,11 @@ AR Path="/5D4692B0" Ref="D?"  Part="1"
 AR Path="/5CF868AF/5D4692B0" Ref="D?"  Part="1" 
 AR Path="/5C95BECF/5D4692B0" Ref="D?"  Part="1" 
 AR Path="/5C6B9F28/5D4692B0" Ref="D5"  Part="1" 
-F 0 "D5" V 8339 5383 50  0000 R CNN
-F 1 "LED" V 8248 5383 50  0000 R CNN
+F 0 "D5" V 8384 5383 50  0000 R CNN
+F 1 "LED RED 10mA 1.9V" V 8293 5383 50  0000 R CNN
 F 2 "LEDs:LED_0805_HandSoldering" H 8300 5500 50  0001 C CNN
 F 3 "~" H 8300 5500 50  0001 C CNN
+F 4 "732-4984-1-ND" V 8202 5383 50  0000 R CNN "DigiKey"
 	1    8300 5500
 	0    -1   -1   0   
 $EndComp
@@ -9834,9 +9838,10 @@ AR Path="/5CF868AF/5D4692BA" Ref="R?"  Part="1"
 AR Path="/5C95BECF/5D4692BA" Ref="R?"  Part="1" 
 AR Path="/5C6B9F28/5D4692BA" Ref="R51"  Part="1" 
 F 0 "R51" H 8232 5054 50  0000 R CNN
-F 1 "R_US" H 8232 5145 50  0000 R CNN
+F 1 "309" H 8232 5145 50  0000 R CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 8340 5090 50  0001 C CNN
 F 3 "~" H 8300 5100 50  0001 C CNN
+F 4 "P309CCT-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    8300 5100
 	-1   0    0    1   
 $EndComp
@@ -9874,4 +9879,6 @@ Wire Wire Line
 	6550 5350 6700 5350
 NoConn ~ 6600 5250
 NoConn ~ 6900 5250
+Text Notes 8450 4250 0    50   ~ 0
+Pin header male pins: DigiKey part S2011E-20-ND\nStandoffs:  4x 1772-1705-ND\nScrews: 8x 1772-1467-ND
 $EndSCHEMATC

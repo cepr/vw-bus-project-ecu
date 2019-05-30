@@ -96,7 +96,7 @@ F 0 "J3" H 1330 3137 50  0000 L CNN
 F 1 "TPS" H 1330 3046 50  0000 L CNN
 F 2 "Speeduino Mini:ED120_3DS" H 1250 3050 50  0001 C CNN
 F 3 "~" H 1250 3050 50  0001 C CNN
-F 4 "ED1610-ND" H 1330 2955 50  0000 L CNN "DIGIKEY"
+F 4 "ED1610-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    1250 3050
 	-1   0    0    -1  
 $EndComp
@@ -127,7 +127,7 @@ F 0 "J4" H 1330 3887 50  0000 L CNN
 F 1 "IAT" H 1330 3796 50  0000 L CNN
 F 2 "Speeduino Mini:ED120_2DS" H 1250 3850 50  0001 C CNN
 F 3 "http://www.on-shore.com/wp-content/uploads/2015/09/ed120ds.pdf" H 1250 3850 50  0001 C CNN
-F 4 "ED1609-ND" H 1330 3705 50  0000 L CNN "DIGIKEY"
+F 4 "ED1609-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    1250 3850
 	-1   0    0    -1  
 $EndComp
@@ -164,7 +164,7 @@ F 0 "J12" H 1430 6787 50  0000 L CNN
 F 1 "oil pressure" H 1430 6696 50  0000 L CNN
 F 2 "Speeduino Mini:ED120_3DS" H 1350 6700 50  0001 C CNN
 F 3 "~" H 1350 6700 50  0001 C CNN
-F 4 "ED1610-ND" H 1430 6605 50  0000 L CNN "DIGIKEY"
+F 4 "ED1610-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    1350 6700
 	-1   0    0    -1  
 $EndComp
@@ -199,7 +199,7 @@ F 0 "J13" H 1430 7637 50  0000 L CNN
 F 1 "fuel pressure" H 1430 7546 50  0000 L CNN
 F 2 "Speeduino Mini:ED120_3DS" H 1350 7550 50  0001 C CNN
 F 3 "~" H 1350 7550 50  0001 C CNN
-F 4 "ED1610-ND" H 1430 7455 50  0000 L CNN "DIGIKEY"
+F 4 "ED1610-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    1350 7550
 	-1   0    0    -1  
 $EndComp
@@ -224,7 +224,7 @@ F 0 "J1" H 1330 1487 50  0000 L CNN
 F 1 "O2" H 1330 1396 50  0000 L CNN
 F 2 "Speeduino Mini:ED120_4DS" H 1250 1450 50  0001 C CNN
 F 3 "~" H 1250 1450 50  0001 C CNN
-F 4 "ED2227-ND" H 1330 1305 50  0000 L CNN "DIGIKEY"
+F 4 "ED2227-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    1250 1450
 	-1   0    0    -1  
 $EndComp
@@ -296,7 +296,7 @@ F 0 "J14" H 10280 5237 50  0000 L CNN
 F 1 "power" H 10280 5146 50  0000 L CNN
 F 2 "Speeduino Mini:ED120_3DS" H 10200 5150 50  0001 C CNN
 F 3 "~" H 10200 5150 50  0001 C CNN
-F 4 "ED1610-ND" H 10280 5055 50  0000 L CNN "DIGIKEY"
+F 4 "ED1610-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    10200 5150
 	1    0    0    -1  
 $EndComp
@@ -380,6 +380,7 @@ F 0 "JP1" H 7100 1564 50  0000 C CNN
 F 1 "Jumper" H 7100 1473 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7100 1300 50  0001 C CNN
 F 3 "~" H 7100 1300 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    7100 1300
 	1    0    0    -1  
 $EndComp
@@ -393,6 +394,7 @@ F 0 "JP8" H 9050 1564 50  0000 C CNN
 F 1 "Jumper" H 9050 1473 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9050 1300 50  0001 C CNN
 F 3 "~" H 9050 1300 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    9050 1300
 	1    0    0    -1  
 $EndComp
@@ -417,6 +419,7 @@ F 0 "JP2" H 7100 1964 50  0000 C CNN
 F 1 "Jumper" H 7100 1873 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7100 1700 50  0001 C CNN
 F 3 "~" H 7100 1700 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    7100 1700
 	1    0    0    -1  
 $EndComp
@@ -428,6 +431,7 @@ F 0 "JP9" H 9050 1964 50  0000 C CNN
 F 1 "Jumper" H 9050 1873 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9050 1700 50  0001 C CNN
 F 3 "~" H 9050 1700 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    9050 1700
 	1    0    0    -1  
 $EndComp
@@ -454,6 +458,7 @@ F 0 "JP3" H 7100 2364 50  0000 C CNN
 F 1 "Jumper" H 7100 2273 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7100 2100 50  0001 C CNN
 F 3 "~" H 7100 2100 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    7100 2100
 	1    0    0    -1  
 $EndComp
@@ -465,6 +470,7 @@ F 0 "JP4" H 7100 2764 50  0000 C CNN
 F 1 "Jumper" H 7100 2673 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7100 2500 50  0001 C CNN
 F 3 "~" H 7100 2500 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    7100 2500
 	1    0    0    -1  
 $EndComp
@@ -480,6 +486,7 @@ F 0 "JP10" H 9050 2364 50  0000 C CNN
 F 1 "Jumper" H 9050 2273 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9050 2100 50  0001 C CNN
 F 3 "~" H 9050 2100 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    9050 2100
 	1    0    0    -1  
 $EndComp
@@ -504,6 +511,7 @@ F 0 "JP11" H 9050 2764 50  0000 C CNN
 F 1 "Jumper" H 9050 2673 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9050 2500 50  0001 C CNN
 F 3 "~" H 9050 2500 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    9050 2500
 	1    0    0    -1  
 $EndComp
@@ -528,6 +536,7 @@ F 0 "JP12" H 9050 3164 50  0000 C CNN
 F 1 "Jumper" H 9050 3073 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9050 2900 50  0001 C CNN
 F 3 "~" H 9050 2900 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    9050 2900
 	1    0    0    -1  
 $EndComp
@@ -552,6 +561,7 @@ F 0 "JP5" H 7100 3164 50  0000 C CNN
 F 1 "Jumper" H 7100 3073 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7100 2900 50  0001 C CNN
 F 3 "~" H 7100 2900 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    7100 2900
 	1    0    0    -1  
 $EndComp
@@ -563,6 +573,7 @@ F 0 "JP6" H 7100 3514 50  0000 C CNN
 F 1 "Jumper" H 7100 3423 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7100 3250 50  0001 C CNN
 F 3 "~" H 7100 3250 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    7100 3250
 	1    0    0    -1  
 $EndComp
@@ -574,6 +585,7 @@ F 0 "JP7" H 7100 3864 50  0000 C CNN
 F 1 "Jumper" H 7100 3773 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7100 3600 50  0001 C CNN
 F 3 "~" H 7100 3600 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    7100 3600
 	1    0    0    -1  
 $EndComp
@@ -606,6 +618,7 @@ F 0 "JP14" H 4200 1514 50  0000 C CNN
 F 1 "Jumper" H 4200 1423 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4200 1250 50  0001 C CNN
 F 3 "~" H 4200 1250 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    4200 1250
 	1    0    0    -1  
 $EndComp
@@ -619,6 +632,7 @@ F 0 "JP13" H 1750 1364 50  0000 C CNN
 F 1 "Jumper" H 1750 1273 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1750 1100 50  0001 C CNN
 F 3 "~" H 1750 1100 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    1750 1100
 	1    0    0    -1  
 $EndComp
@@ -636,6 +650,7 @@ F 0 "JP24" H 7150 4314 50  0000 C CNN
 F 1 "Jumper" H 7150 4223 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7150 4050 50  0001 C CNN
 F 3 "~" H 7150 4050 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    7150 4050
 	1    0    0    -1  
 $EndComp
@@ -647,6 +662,7 @@ F 0 "JP25" H 7150 4714 50  0000 C CNN
 F 1 "Jumper" H 7150 4623 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7150 4450 50  0001 C CNN
 F 3 "~" H 7150 4450 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    7150 4450
 	1    0    0    -1  
 $EndComp
@@ -666,6 +682,7 @@ F 0 "JP27" H 7150 5514 50  0000 C CNN
 F 1 "Jumper" H 7150 5423 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7150 5250 50  0001 C CNN
 F 3 "~" H 7150 5250 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    7150 5250
 	1    0    0    -1  
 $EndComp
@@ -677,6 +694,7 @@ F 0 "JP26" H 7150 5114 50  0000 C CNN
 F 1 "Jumper" H 7150 5023 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7150 4850 50  0001 C CNN
 F 3 "~" H 7150 4850 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    7150 4850
 	1    0    0    -1  
 $EndComp
@@ -708,6 +726,7 @@ F 0 "JP28" H 9050 4314 50  0000 C CNN
 F 1 "Jumper" H 9050 4223 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9050 4050 50  0001 C CNN
 F 3 "~" H 9050 4050 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    9050 4050
 	1    0    0    -1  
 $EndComp
@@ -719,6 +738,7 @@ F 0 "JP29" H 9050 4714 50  0000 C CNN
 F 1 "Jumper" H 9050 4623 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9050 4450 50  0001 C CNN
 F 3 "~" H 9050 4450 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    9050 4450
 	1    0    0    -1  
 $EndComp
@@ -811,6 +831,7 @@ F 0 "JP30" H 7150 6514 50  0000 C CNN
 F 1 "Jumper" H 7150 6423 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7150 6250 50  0001 C CNN
 F 3 "~" H 7150 6250 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    7150 6250
 	1    0    0    -1  
 $EndComp
@@ -826,6 +847,7 @@ F 0 "JP31" H 9150 6514 50  0000 C CNN
 F 1 "Jumper" H 9150 6423 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9150 6250 50  0001 C CNN
 F 3 "~" H 9150 6250 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    9150 6250
 	1    0    0    -1  
 $EndComp
@@ -837,6 +859,7 @@ F 0 "JP32" H 9150 6914 50  0000 C CNN
 F 1 "Jumper" H 9150 6823 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9150 6650 50  0001 C CNN
 F 3 "~" H 9150 6650 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    9150 6650
 	1    0    0    -1  
 $EndComp
@@ -864,7 +887,7 @@ F 0 "J6" H 1430 5937 50  0000 L CNN
 F 1 "crankshaft position sensor" H 1430 5846 50  0000 L CNN
 F 2 "Speeduino Mini:ED120_3DS" H 1350 5850 50  0001 C CNN
 F 3 "~" H 1350 5850 50  0001 C CNN
-F 4 "ED1610-ND" H 1430 5755 50  0000 L CNN "DIGIKEY"
+F 4 "ED1610-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    1350 5850
 	-1   0    0    -1  
 $EndComp
@@ -908,7 +931,7 @@ F 0 "J5" H 1330 4637 50  0000 L CNN
 F 1 "head temperature" H 1330 4546 50  0000 L CNN
 F 2 "Speeduino Mini:ED120_2DS" H 1250 4600 50  0001 C CNN
 F 3 "http://www.on-shore.com/wp-content/uploads/2015/09/ed120ds.pdf" H 1250 4600 50  0001 C CNN
-F 4 "ED1609-ND" H 1330 4455 50  0000 L CNN "DIGIKEY"
+F 4 "ED1609-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    1250 4600
 	-1   0    0    -1  
 $EndComp
@@ -935,6 +958,7 @@ F 0 "JP45" H 1750 2464 50  0000 C CNN
 F 1 "Jumper" H 1750 2373 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1750 2200 50  0001 C CNN
 F 3 "~" H 1750 2200 50  0001 C CNN
+F 4 "S9337-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    1750 2200
 	1    0    0    -1  
 $EndComp
@@ -1025,6 +1049,7 @@ F 0 "H1" H 10600 846 50  0000 L CNN
 F 1 "MountingHole" H 10600 755 50  0000 L CNN
 F 2 "Mounting_Holes:MountingHole_4.3mm_M4_Pad_Via" H 10500 800 50  0001 C CNN
 F 3 "~" H 10500 800 50  0001 C CNN
+F 4 "1772-4097-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    10500 800 
 	1    0    0    -1  
 $EndComp
@@ -1036,6 +1061,7 @@ F 0 "H2" H 10600 1046 50  0000 L CNN
 F 1 "MountingHole" H 10600 955 50  0000 L CNN
 F 2 "Mounting_Holes:MountingHole_4.3mm_M4_Pad_Via" H 10500 1000 50  0001 C CNN
 F 3 "~" H 10500 1000 50  0001 C CNN
+F 4 "1772-4097-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    10500 1000
 	1    0    0    -1  
 $EndComp
@@ -1047,6 +1073,7 @@ F 0 "H3" H 10600 1246 50  0000 L CNN
 F 1 "MountingHole" H 10600 1155 50  0000 L CNN
 F 2 "Mounting_Holes:MountingHole_4.3mm_M4_Pad_Via" H 10500 1200 50  0001 C CNN
 F 3 "~" H 10500 1200 50  0001 C CNN
+F 4 "1772-4097-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    10500 1200
 	1    0    0    -1  
 $EndComp
@@ -1058,6 +1085,7 @@ F 0 "H4" H 10600 1446 50  0000 L CNN
 F 1 "MountingHole" H 10600 1355 50  0000 L CNN
 F 2 "Mounting_Holes:MountingHole_4.3mm_M4_Pad_Via" H 10500 1400 50  0001 C CNN
 F 3 "~" H 10500 1400 50  0001 C CNN
+F 4 "1772-4097-ND" H 0   0   50  0001 C CNN "DigiKey"
 	1    10500 1400
 	1    0    0    -1  
 $EndComp
