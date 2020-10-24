@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:speeduino_mini-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 19 22
+Sheet 19 23
 Title ""
 Date ""
 Rev ""
@@ -15,9 +14,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega2561-16AU U3
+L speeduino_mini-rescue:ATmega2561-16AU-MCU_Microchip_ATmega U3
 U 1 1 5C710FBC
 P 6300 4700
+AR Path="/5C710FBC" Ref="U3"  Part="1" 
+AR Path="/5C610827/5C710FBC" Ref="U3"  Part="1" 
 F 0 "U3" H 6300 2400 50  0000 C CNN
 F 1 "ATmega2561-16AU" H 6300 2300 50  0000 C CNN
 F 2 "Housings_QFP:TQFP-64_14x14mm_Pitch0.8mm" H 6300 4700 50  0001 C CIN
@@ -814,4 +815,8 @@ Wire Wire Line
 	6900 5400 7150 5400
 Wire Wire Line
 	7150 5500 6900 5500
+Text Notes 5150 6750 0    50   ~ 0
+ICP1: PD4\nICP3: PE7
+Text Notes 7000 5700 0    50   ~ 0
+JUMP TO PD4 (Input Capture Pin for timer 1)
 $EndSCHEMATC

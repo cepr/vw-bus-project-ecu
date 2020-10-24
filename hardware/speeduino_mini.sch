@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:speeduino_mini-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A3 16535 11693
 encoding utf-8
-Sheet 1 22
+Sheet 1 23
 Title ""
 Date ""
 Rev ""
@@ -1147,4 +1146,12 @@ Wire Wire Line
 	6700 6650 6700 6750
 Wire Wire Line
 	6700 6750 6500 6750
+Text Notes 4200 0    0    50   ~ 0
+TODO add missing 1k pull-up on hall sensors
+$Sheet
+S 7350 7650 1350 1050
+U 5EAF1046
+F0 "Throttle" 50
+F1 "throttle.sch" 50
+$EndSheet
 $EndSCHEMATC

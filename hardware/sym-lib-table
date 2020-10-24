@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name speeduino_mini)(type Legacy)(uri ${KIPRJMOD}/speeduino_mini.lib)(options "")(descr ""))
   (lib (name DRV103H)(type Legacy)(uri ${KIPRJMOD}/DRV103H.lib)(options "")(descr ""))
+  (lib (name speeduino_mini-rescue)(type Legacy)(uri ${KIPRJMOD}/speeduino_mini-rescue.lib)(options "")(descr ""))
 )
